@@ -88,6 +88,11 @@ const SyncJoyTheme = memo(function SyncJoyTheme() {
 });
 
 const theme = extendTheme({
+  fontFamily: {
+    display: "var(--ifm-font-family-base)",
+    body: "var(--ifm-font-family-base)",
+    fallback: "var(--ifm-font-family-base)",
+  },
   colorSchemes: {
     light: {
       palette: {
