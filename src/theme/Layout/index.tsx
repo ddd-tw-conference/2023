@@ -22,6 +22,8 @@ import {
   TypographyProps,
 } from "@mui/joy";
 
+import { extendTheme } from "@mui/joy/styles";
+
 type Props = WrapperProps<typeof LayoutType> & {
   children: ReactNode;
 };
@@ -63,8 +65,8 @@ const components: ComponentProps<typeof MDXProvider>["components"] = {
   blockquote: memo(function Blockquote(props: AlertProps<"blockquote">) {
     return <Alert {...props} component="blockquote" />;
   }),
-  wrapper: memo(function Wrapper(props: StackProps<"article">) {
-    return <Stack {...props} component="article" className="markdown" />;
+  wrapper: memo(function Wrapper(props: StackProps<"section">) {
+    return <Stack {...props} component="section" className="markdown" />;
   }),
 };
 
@@ -85,6 +87,47 @@ const SyncJoyTheme = memo(function SyncJoyTheme() {
   return null;
 });
 
+const theme = extendTheme({
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          100: "#e6eef5",
+          200: "#597da7",
+          300: "#4e6e94",
+          400: "#4b6a8e",
+          500: "#446081",
+          600: "#3d5674",
+          700: "#3a526e",
+          800: "#30435a",
+          900: "#2b3a4f",
+        },
+        background: {
+          body: "var(--ifm-background-color)",
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          100: "#ffffff",
+          200: "#ffffff",
+          300: "#dfeaf8",
+          400: "#cedff5",
+          500: "#acc9ee",
+          600: "#8ab3e7",
+          700: "#79a8e4",
+          800: "#4687d9",
+          900: "#2b3a4f",
+        },
+        background: {
+          body: "var(--ifm-background-color)",
+        },
+      },
+    },
+  },
+});
+
 const BindJoyTheme = memo(function BindJoyTheme({
   children,
 }: {
@@ -94,7 +137,10 @@ const BindJoyTheme = memo(function BindJoyTheme({
   return (
     <>
       {getInitColorSchemeScript()}
-      <CssVarsProvider defaultMode={colorMode.isDarkTheme ? "dark" : "light"}>
+      <CssVarsProvider
+        defaultMode={colorMode.isDarkTheme ? "dark" : "light"}
+        theme={theme}
+      >
         <CssBaseline />
         <SyncJoyTheme />
         {children}

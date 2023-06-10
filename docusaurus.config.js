@@ -62,6 +62,10 @@ const config = {
           },
         ],
       },
+      colorMode: {
+        defaultMode: "dark",
+        respectPrefersColorScheme: true,
+      },
     }),
   plugins: ["@docusaurus/plugin-ideal-image"],
 };
