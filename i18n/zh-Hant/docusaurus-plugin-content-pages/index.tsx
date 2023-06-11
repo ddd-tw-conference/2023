@@ -6,10 +6,7 @@ import React, { createElement } from "react";
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`中文 ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
       <Index
         content={createElement(
           require("@site/src/content/zh-Hant/index.mdx").default
