@@ -55,13 +55,13 @@ const Contacts = memo(function Contacts() {
     >
       {contacts.map(({ icon, link }) => (
         <Box
-          key="link"
+          key={link}
           component="li"
           sx={{
             display: "block",
           }}
         >
-          <IconButton component="a" href={link} size="lg">
+          <IconButton component="a" target="_blank" href={link} size="lg">
             {icon}
           </IconButton>
         </Box>
