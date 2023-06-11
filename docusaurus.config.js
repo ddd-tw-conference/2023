@@ -67,15 +67,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
     }),
-  plugins: [
-    "@docusaurus/plugin-ideal-image",
-    [
-      require.resolve("docusaurus-lunr-search"),
-      {
-        languages: ["en", "zh"],
-      },
-    ],
-  ],
+  plugins: ["@docusaurus/plugin-ideal-image"],
 };
 
 module.exports = config;
