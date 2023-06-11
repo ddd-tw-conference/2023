@@ -79,11 +79,11 @@ const JoyMdxProvider = memo(function JoyMdxProvider({
 });
 
 const SyncJoyTheme = memo(function SyncJoyTheme() {
-  const colorMode = useColorMode();
+  const { colorMode } = useColorMode();
   const { setMode } = useColorScheme();
   useEffect(() => {
-    setMode(colorMode.isDarkTheme ? "dark" : "light");
-  }, [colorMode.isDarkTheme, setMode]);
+    setMode(colorMode);
+  }, [colorMode, setMode]);
   return null;
 });
 
@@ -138,14 +138,11 @@ const BindJoyTheme = memo(function BindJoyTheme({
 }: {
   children: ReactNode;
 }) {
-  const colorMode = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <>
       {getInitColorSchemeScript()}
-      <CssVarsProvider
-        defaultMode={colorMode.isDarkTheme ? "dark" : "light"}
-        theme={theme}
-      >
+      <CssVarsProvider defaultMode={colorMode} theme={theme}>
         <CssBaseline />
         <SyncJoyTheme />
         {children}
