@@ -6,9 +6,11 @@ import React, { ReactNode, memo } from "react";
 const Index = memo(function Index({
   content,
   sponsorRequest,
+  about,
 }: {
   content: ReactNode;
   sponsorRequest: ReactNode;
+  about: ReactNode;
 }) {
   return (
     <Stack
@@ -23,6 +25,9 @@ const Index = memo(function Index({
         <CardContent>{content}</CardContent>
       </Card>
       <Stack>{sponsorRequest}</Stack>
+      <Card>
+        <CardContent>{about}</CardContent>
+      </Card>
     </Stack>
   );
 });

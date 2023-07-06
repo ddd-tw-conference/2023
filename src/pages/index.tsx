@@ -14,6 +14,7 @@ export default function Home(): JSX.Element {
         sponsorRequest={createElement(
           require("@site/src/content/en/sponsorRequest.mdx").default
         )}
+        about={createElement(require("@site/src/content/en/about.mdx").default)}
       />
     </Layout>
   );
