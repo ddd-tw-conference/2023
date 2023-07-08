@@ -57,7 +57,12 @@ const config = {
         },
         items: [
           {
-            label: "Purchase tickets",
+            label: "Join Us as a Volunteer",
+            position: "right",
+            to: "volunteer",
+          },
+          {
+            label: "Join Us as a Problem Resolver",
             position: "right",
             href: "https://dddtaiwan.kktix.cc/events/dddtwconf2023",
           },
