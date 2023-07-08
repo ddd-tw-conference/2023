@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
 import { Box, IconButton, Stack } from "@mui/joy";
 import { MaterialSymbolsGroupsOutlineSharp } from "@site/src/icons/GroupsOutlineSharp";
 import { IcBaselineFacebook } from "@site/src/icons/IcBaselineFacebook";
@@ -6,7 +8,7 @@ import { MdiFacebookMessenger } from "@site/src/icons/MdiFacebookMessenger";
 import { MdiInstagram } from "@site/src/icons/MdiInstagram";
 import { MdiTwitter } from "@site/src/icons/MdiTwitter";
 import { MdiYoutube } from "@site/src/icons/MdiYoutube";
-import React, { ReactNode, memo } from "react";
+import { ReactNode, memo } from "react";
 
 const contacts: {
   icon: ReactNode;
@@ -45,6 +47,7 @@ const contacts: {
 const Contacts = memo(function Contacts() {
   return (
     <Stack
+      css
       component="ul"
       direction="row"
       width="100%"

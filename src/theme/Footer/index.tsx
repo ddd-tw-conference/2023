@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import type { WrapperProps } from "@docusaurus/types";
+import { jsx } from "@emotion/react";
 import type FooterType from "@theme/Footer";
-import React from "react";
 import { Contacts } from "./Contacts";
 
 type Props = WrapperProps<typeof FooterType>;

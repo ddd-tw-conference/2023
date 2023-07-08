@@ -1,8 +1,10 @@
+/** @jsx jsx */
 import Link from "@docusaurus/Link";
+import { jsx } from "@emotion/react";
 import { Box, Card, CardContent, Stack } from "@mui/joy";
 import thumbnail from "@site/src/assets/cover.png";
 import Image from "@theme/IdealImage";
-import React, { ReactNode, memo } from "react";
+import { ReactNode, memo } from "react";
 import { FocusButton } from "../components/FocusButton";
 
 const Index = memo(function Index({

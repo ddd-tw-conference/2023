@@ -1,4 +1,6 @@
-import React, { SVGProps } from "react";
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
+import { SVGProps } from "react";
 
 export function MdiYoutube(props: SVGProps<SVGSVGElement>) {
   return (

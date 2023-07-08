@@ -1,7 +1,9 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
 import { Box, Stack } from "@mui/joy";
 import thumbnail from "@site/src/assets/jaime-lopes-0RDBOAdnbWM-unsplash.jpg";
 import Image from "@theme/IdealImage";
-import React, { ReactNode, memo } from "react";
+import { ReactNode, memo } from "react";
 import { FocusButton } from "../components/FocusButton";
 
 const Volunteer = memo(function Volunteer({ content }: { content: ReactNode }) {

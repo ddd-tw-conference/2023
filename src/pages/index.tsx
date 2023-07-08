@@ -1,7 +1,9 @@
+/** @jsx jsx */
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { jsx } from "@emotion/react";
 import { Index } from "@site/src/layout/Index";
 import Layout from "@theme/Layout";
-import React, { createElement } from "react";
+import { createElement } from "react";
 
 export default function Page(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();

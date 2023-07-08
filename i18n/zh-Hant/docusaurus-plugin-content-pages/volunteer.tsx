@@ -1,6 +1,8 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
 import { Volunteer } from "@site/src/layout/Volunteer";
 import Layout from "@theme/Layout";
-import React, { createElement } from "react";
+import { createElement } from "react";
 
 export default function Page(): JSX.Element {
   return (
