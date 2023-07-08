@@ -1,14 +1,12 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
-import { Button, ButtonProps, ButtonTypeMap } from "@mui/joy";
-import { ElementType, forwardRef } from "react";
+import { Button } from "@mui/joy";
+import { forwardRef } from "react";
 
-const FocusButton: typeof Button = forwardRef(function FocusButton<
-  D extends ElementType = ButtonTypeMap["defaultComponent"],
-  P = {
-    component?: ElementType;
-  }
->(props: ButtonProps<D, P>, ref) {
+const FocusButton: typeof Button = forwardRef(function FocusButton(
+  { children, ...props }: any,
+  ref: any
+) {
   return (
     <Button
       css={css`
@@ -25,7 +23,11 @@ const FocusButton: typeof Button = forwardRef(function FocusButton<
       `}
       {...props}
       ref={ref}
-    />
+    >
+      <div>👉</div>
+      <div>{children}</div>
+      <div>👈</div>
+    </Button>
   );
 }) as any;
 

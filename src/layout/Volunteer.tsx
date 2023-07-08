@@ -21,18 +21,14 @@ const Volunteer = memo(function Volunteer({ content }: { content: ReactNode }) {
         rel="noopener noreferrer"
         href="https://forms.gle/1N5HdoV2X67VF4cw5"
       >
-        <div>👉</div>
-        <div>
-          <Box
-            sx={{
-              fontSize: "1.5em",
-            }}
-          >
-            Join Us
-          </Box>
-          <Box>as a Volunteer</Box>
-        </div>
-        <div>👈</div>
+        <Box
+          sx={{
+            fontSize: "1.5em",
+          }}
+        >
+          Join Us
+        </Box>
+        <Box>as a Volunteer</Box>
       </FocusButton>
     </Stack>
   );
