@@ -28,8 +28,10 @@ const Index = memo(function Index({
         sx={{
           display: "flex",
           alignItems: "center",
+          justifyContent: "center",
           gap: "1.5rem",
           flexDirection: "column",
+          flexWrap: "wrap",
           ".MuiButton-root": {
             margin: 0,
           },
@@ -55,6 +57,8 @@ const Index = memo(function Index({
             display: "inherit",
             gap: "inherit",
             alignItems: "inherit",
+            justifyContent: "inherit",
+            flexWrap: "inherit",
           }}
         >
           <FocusButton component={Link} to="sponsor">
