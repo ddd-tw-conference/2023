@@ -52,6 +52,8 @@ const Contacts = memo(function Contacts() {
       alignItems="center"
       justifyContent="center"
       flexWrap="wrap"
+      m="2rem"
+      pl={0}
     >
       {contacts.map(({ icon, link }) => (
         <Box
