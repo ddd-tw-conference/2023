@@ -13,9 +13,6 @@ export default function Page(): JSX.Element {
         content={createElement(
           require("@site/src/content/en/index.mdx").default
         )}
-        sponsorRequest={createElement(
-          require("@site/src/content/en/sponsorRequest.mdx").default
-        )}
       />
     </Layout>
   );
