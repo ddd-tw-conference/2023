@@ -16,6 +16,12 @@ pnpm run start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+To develop with `zh-Hant` locale, run:
+
+```
+pnpm run start:zh
+```
+
 ### Build
 
 ```
