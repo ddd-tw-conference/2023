@@ -57,6 +57,11 @@ const config = {
         },
         items: [
           {
+            label: "Purchase tickets",
+            position: "right",
+            href: "https://dddtaiwan.kktix.cc/events/dddtwconf2023",
+          },
+          {
             type: "localeDropdown",
             position: "right",
           },
