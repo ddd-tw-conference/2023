@@ -1,5 +1,7 @@
 // @ts-check
 
+const BASE_URL = process.env["BASE_URL"] ?? "/2023/";
+
 const title = "DDDesign TW Conference 2023";
 const description =
   'The theme of this year\'s conference is "Inspiration." We are collecting real stories from DDD practitioners from around the world and inviting them to share their journey of change, experiences, and growth.';
@@ -10,7 +12,7 @@ const config = {
   tagline: description,
   favicon: "img/favicon.png",
   url: "https://conference.ddd-tw.com",
-  baseUrl: "/2023/",
+  baseUrl: BASE_URL,
   organizationName: "ddd-tw-conference",
   projectName: "2023",
 
