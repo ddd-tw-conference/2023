@@ -1,4 +1,6 @@
+/** @jsx jsx */
 import type { WrapperProps } from "@docusaurus/types";
+import { jsx } from "@emotion/react";
 import { MDXProvider } from "@mdx-js/react";
 import {
   CssVarsProvider,
@@ -7,7 +9,8 @@ import {
 } from "@mui/joy/styles";
 import Layout from "@theme-original/Layout";
 import type LayoutType from "@theme/Layout";
-import React, { ComponentProps, ReactNode, memo, useEffect } from "react";
+
+import { ComponentProps, Fragment, ReactNode, memo, useEffect } from "react";
 
 import { useColorMode } from "@docusaurus/theme-common";
 import {
@@ -140,14 +143,14 @@ const BindJoyTheme = memo(function BindJoyTheme({
 }) {
   const { colorMode } = useColorMode();
   return (
-    <>
+    <Fragment>
       {getInitColorSchemeScript()}
       <CssVarsProvider defaultMode={colorMode} theme={theme}>
         <CssBaseline />
         <SyncJoyTheme />
         {children}
       </CssVarsProvider>
-    </>
+    </Fragment>
   );
 });
 

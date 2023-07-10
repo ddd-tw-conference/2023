@@ -1,5 +1,9 @@
 // @ts-check
 
+const { join } = require("node:path");
+
+const BASE_URL = process.env["BASE_URL"] ?? "/2023/";
+
 const title = "DDDesign TW Conference 2023";
 const description =
   'The theme of this year\'s conference is "Inspiration." We are collecting real stories from DDD practitioners from around the world and inviting them to share their journey of change, experiences, and growth.';
@@ -8,9 +12,9 @@ const description =
 const config = {
   title,
   tagline: description,
-  favicon: "img/favicon.png",
+  favicon: join(BASE_URL, "img/favicon.png"),
   url: "https://conference.ddd-tw.com",
-  baseUrl: "/2023/",
+  baseUrl: BASE_URL,
   organizationName: "ddd-tw-conference",
   projectName: "2023",
 
@@ -56,6 +60,16 @@ const config = {
           src: "img/favicon.png",
         },
         items: [
+          {
+            label: "Join Us as a Volunteer",
+            position: "right",
+            to: "volunteer",
+          },
+          {
+            label: "Join Us as a Problem Resolver",
+            position: "right",
+            href: "https://dddtaiwan.kktix.cc/events/dddtwconf2023",
+          },
           {
             type: "localeDropdown",
             position: "right",

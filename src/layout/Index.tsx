@@ -1,15 +1,11 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
 import { Card, CardContent, Stack } from "@mui/joy";
 import thumbnail from "@site/src/assets/cover.png";
 import Image from "@theme/IdealImage";
-import React, { ReactNode, memo } from "react";
+import { ReactNode, memo } from "react";
 
-const Index = memo(function Index({
-  content,
-  sponsorRequest,
-}: {
-  content: ReactNode;
-  sponsorRequest: ReactNode;
-}) {
+const Index = memo(function Index({ content }: { content: ReactNode }) {
   return (
     <Stack
       className="container"
@@ -22,7 +18,6 @@ const Index = memo(function Index({
       <Card>
         <CardContent>{content}</CardContent>
       </Card>
-      <Stack>{sponsorRequest}</Stack>
     </Stack>
   );
 });

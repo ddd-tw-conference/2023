@@ -1,4 +1,7 @@
+import Link from "@docusaurus/Link";
+import { Divider } from "@mui/joy";
 import { CustomBulletUl } from "@site/src/components/CustomBulletUl";
+import { FocusButton } from "@site/src/components/FocusButton";
 
 - 活動日期：9/16 ~ 9/17
 - 徵稿截止時間：2023 / 6 / 30
@@ -20,3 +23,40 @@ import { CustomBulletUl } from "@site/src/components/CustomBulletUl";
     等領域。
   </li>
 </CustomBulletUl>
+
+<FocusButton
+  component="a"
+  href="https://dddtaiwan.kktix.cc/events/dddtwconf2023"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Box
+    sx={{
+      fontSize: "1.5em",
+    }}
+  >
+    Join Us
+  </Box>
+  <Box>as a Problem Resolver</Box>
+</FocusButton>
+
+<Divider sx={{ mt: "2rem", mb: "2rem" }} />
+
+## 關於我們
+
+Domain Driven Design Taiwan Community (DDDTW)，是一個基於對領域驅動設計的熱愛組成的交流社群。我們主要探討關注從業務角度出發，去探索真正的商業需求與要解決的問題是什麼？通過一系列的跨組織協作與利益關係人的交流，從而設計出解決方案滿足需求並創造價值。
+
+於 2018 年創立，我們熱愛分享、熱愛技術、熱愛學習。我們的志工包含軟體工程師、架構師、產品經理、設計師，以及各式各樣愛好領域驅動設計的夥伴。所經營的臉書社群更是有將近 4,500 成員，並且在持續的成長當中。
+
+創立至今更是累積了豐富的線上線下活動的經驗，包含多場讀書會、Meetup 演講、工作坊甚至是黑客松比賽等等，並在 2020 年 及 2021 年舉辦了第一屆及第二屆的領域驅動設計年會。除了邀請業界人士分享，也時常與各大社群合作，累積了非常多開發上的實務經驗！
+
+<FocusButton component={Link} to="volunteer">
+  <Box
+    sx={{
+      fontSize: "1.5em",
+    }}
+  >
+    Join Us
+  </Box>
+  <Box>as a Volunteer</Box>
+</FocusButton>
