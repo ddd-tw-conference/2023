@@ -6,7 +6,7 @@ const BASE_URL = process.env["BASE_URL"] ?? "/2023/";
 
 const title = "DDDesign TW Conference 2023";
 const description =
-  'The theme of this year\'s conference is "Inspiration." We are collecting real stories from DDD practitioners from around the world and inviting them to share their journey of change, experiences, and growth.';
+  'The DDDesign TW team is pleased to announce the official dates for the DDDesign TW Conference, which will be held on September 16th and 17th. The theme of this year\'s conference is "Inspire." Building on our past successes, we aim to provide participants with a unique opportunity to experience the innovation and inspiration of DDD and discover the potential applications of DDD in their everyday work.';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
