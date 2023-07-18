@@ -1,9 +1,11 @@
 /** @jsx jsx */
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import Logo104 from "@site/src/assets/104.png";
 import JetBrains from "@site/src/assets/jet-brains.png";
 import { Daddy } from "@site/src/icons/Daddy";
 import { SugarDaddy } from "@site/src/icons/SugarDaddy";
+import ThemedImage from "@theme/ThemedImage";
 import { memo } from "react";
 
 const SponsorList = memo(function SponsorList() {
@@ -21,6 +23,24 @@ const SponsorList = memo(function SponsorList() {
         img: JetBrains,
       },
     ],
+  };
+
+  const SponsorImage = (props) => {
+    const { item, style } = props;
+    const inlineStyle = css`
+      ${style}
+    `;
+    const path = useBaseUrl(props.item.img);
+    return (
+      <ThemedImage
+        css={inlineStyle}
+        alt={item.company}
+        sources={{
+          light: path,
+          dark: path,
+        }}
+      />
+    );
   };
 
   return (
@@ -61,6 +81,7 @@ const SponsorList = memo(function SponsorList() {
 
         {sponsors.sugarDaddy.map((item) => (
           <div
+            key={item.company}
             css={css`
               text-align: center;
               display: flex;
@@ -70,13 +91,7 @@ const SponsorList = memo(function SponsorList() {
               max-width: 300px;
             `}
           >
-            <img
-              alt={item.company}
-              src={item.img}
-              css={css`
-                width: 100%;
-              `}
-            />
+            <SponsorImage item={item} style="width: 100%;" />
           </div>
         ))}
       </div>
@@ -108,6 +123,7 @@ const SponsorList = memo(function SponsorList() {
 
         {sponsors.daddy.map((item) => (
           <div
+            key={item.company}
             css={css`
               text-align: center;
               display: flex;
@@ -117,13 +133,10 @@ const SponsorList = memo(function SponsorList() {
               max-width: 300px;
             `}
           >
-            <img
-              alt={item.company}
-              src={item.img}
-              css={css`
-                object-fit: contain;
-                scale: 1.5;
-              `}
+            <SponsorImage
+              item={item}
+              style="object-fit: contain;
+                scale: 1.5;"
             />
           </div>
         ))}
