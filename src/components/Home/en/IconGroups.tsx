@@ -12,19 +12,19 @@ const IconGroups = memo(function IconGroups() {
     info: string;
   }[] = [
     {
-      title: "業務驅動改變",
+      title: "Business-Driven",
       img: Light,
-      info: "企業在市場競爭中必須時時改變策略，但如何進行全盤思考卻往往成為一大挑戰。我們追求更好的協作方式，讓企業戰略思維能夠落地於技術實踐，並確保變革的投資能夠產出豐美的果實！",
+      info: "In the competitive market, businesses must constantly change their strategies. However, the challenge lies in how to conduct comprehensive thinking. We strive for better collaboration methods that allow business strategic thinking to be implemented in technical practices and ensure that investments in change yield fruitful results!",
     },
     {
-      title: "認識 DDD 戰略思維",
+      title: "DDD Strategic Thinking",
       img: Book,
-      info: "DDD 以高層次的戰略思維為指引，透過一系列實踐方法讓技術架構銜能夠接上業務的發展，為組織提供業務變化背後的技術基礎支持並帶來創新的可能性。",
+      info: "DDD, guided by a high-level strategic mindset, employs a series of practical methods to enable the alignment of technical architecture with business development. It provides organizations with the foundational technical support behind business changes and unlocks possibilities for innovation.",
     },
     {
-      title: "業務與 IT 的共同目標",
+      title: "Shared Goals of Business and IT",
       img: Hit,
-      info: "成功的產品需要明確的共同目標。DDD 能夠協助衆多產品利益關係人建立共同目標,透過共同語言確保軟體實踐達成商業目標。",
+      info: "Successful products require clear shared goals. DDD can assist numerous product stakeholders in establishing common objectives and ensuring that software practices align with business goals through a shared language.",
     },
   ];
 
