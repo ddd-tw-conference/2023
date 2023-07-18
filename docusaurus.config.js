@@ -97,10 +97,9 @@ const config = {
             position: "right",
           },
           {
-            type: "html",
             position: "right",
-            value:
-              '<button style="background: #9ABAEB;color:#242526;display: flex;padding: 9px 22px;border-radius: 4px;justify-content: center;align-items: center;gap: 10px;">Get Ticket</button>',
+            to: "volunteer",
+            html: '<button style="background: #9ABAEB;color:#242526;display: flex;padding: 9px 22px;border-radius: 4px;justify-content: center;align-items: center;gap: 10px;">Get Ticket</button>',
           },
         ],
       },
