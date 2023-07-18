@@ -72,11 +72,11 @@
             `}),(0,a.tZ)("h2",null,t.title),(0,a.tZ)("p",{css:a.iv`
               font-size: 16px;
               font-weight: 400;
-            `},t.info)))))}));var v=e(7485),E=e.n(v);const b=(0,s.memo)((function(){return(0,a.tZ)("div",{css:a.iv`
+            `},t.info)))))}));var v=e(7485),b=e.n(v);const E=(0,s.memo)((function(){return(0,a.tZ)("div",{css:a.iv`
         display: flex;
         flex-direction: column;
         gap: 48px;
-        background: #766d94;
+        background: rgba(118, 109, 148, 0.4);
         padding: 60px;
         justify-content: center;
       `},(0,a.tZ)("div",{css:a.iv`
@@ -84,7 +84,7 @@
           gap: 24px;
           justify-content: center;
           align-items: center;
-        `},(0,a.tZ)("img",{alt:"ddd-logo",src:E(),css:a.iv`
+        `},(0,a.tZ)("img",{alt:"ddd-logo",src:b(),css:a.iv`
             width: 172px;
             height: 162px;
           `}),(0,a.tZ)("p",null,"DDDTW \u793e\u7fa4\u81f4\u529b\u65bc\u63a8\u5ee3 Domain-Driven Design \u6b64\u4e00\u98a8\u884c\u5168\u7403\u7684\u65b9\u6cd5\u8ad6\u5728\u81fa\u7063\u624e\u6839\u3002\u4e94\u5e74\u4f86\uff0c\u6211\u5011\u5df2\u7d93\u65bc\u5168\u81fa\u8209\u8fa6\u4e86\u4e0a\u767e\u5834\u6d3b\u52d5\uff0c\u5438\u5f15\u4e0a\u5343\u4eba\u4f86\u7406\u89e3\u751a\u81f3\u5be6\u8e10 DDD\u3002 \u6211\u5011\u5373\u5c07\u65bc 2023/09/16\xa0 \u65bc\u81fa\u5927\u793e\u79d1\u9662\u76db\u5927\u8209\u8fa6\u7b2c\u4e09\u5c46\u7684 DDDesign TW \u5e74\u6703\uff01\u4eca\u5e74\u7684\u4e3b\u984c\u662f\u300c\u555f\u767c\u300d\uff0c\u5e0c\u671b\u53c3\u8207\u8005\u5011\u80fd\u5f9e\u7b2c\u4e00\u7dda\u7684\u5be6\u8e10\u7d93\u9a57\u4e2d\u7372\u5f97\u555f\u767c\u4e26\u7522\u751f\u6539\u8b8a\uff01 \u7232\u4e86\u8ffd\u6c42\u66f4\u597d\u7684\u6d3b\u52d5\u54c1\u8cea\uff0c\u50c5\u4ee3\u8868\u793e\u7fa4\u8aa0\u646f\u5730\u9080\u8acb\u8cb4\u516c\u53f8\u8d0a\u52a9\u4eca\u5e74\u7684\u5e74\u6703\u6d3b\u52d5\uff0c\u4e00\u8d77\u52a0\u5165\u9019\u5834\u8edf\u9ad4\u696d\u754c\u7684\u76db\u5bb4\u4e2d\uff01 \u672c\u6d3b\u52d5\u9810\u8a08\u5438\u5f15\u5c07\u8fd1 500 \u540d\u8edf\u9ad4\u5f9e\u696d\u4eba\u54e1\u53c3\u52a0\uff0c\u52a0\u4e0a 13 \u5834\u6f14\u8b1b\u8207 3 \u5834\u5de5\u4f5c\u574a \uff08\u8b1b\u5e2b\u5305\u542b\u4f86\u81ea\u81fa\u7063\u3001DDD_EU \u8207 DDD China \u7684\u5be6\u8e10\u8005\u8207\u9867\u554f\uff09\uff0c\u6b61\u8fce\u8d0a\u52a9\u6211\u5011\uff0c\u8b93\u6280\u8853\u5e36\u9818\u696d\u52d9\u524d\u9032\uff01")),(0,a.tZ)("div",{css:a.iv`
@@ -103,7 +103,7 @@
                 color: #242526;
                 text-decoration: none;
               }
-            `},"\u4f01\u696d\u8d0a\u52a9"))))})),Q={toc:[]},S="wrapper";function M(t){let{components:i,...e}=t;return(0,n.kt)(S,(0,A.Z)({},Q,e,{components:i,mdxType:"MDXLayout"}),(0,n.kt)(l,{mdxType:"Info"}),(0,n.kt)(B,{mdxType:"IconGroups"}),(0,n.kt)(b,{mdxType:"DDDinfo"}),(0,n.kt)("p",{css:a.iv`
+            `},"\u4f01\u696d\u8d0a\u52a9"))))})),Q={toc:[]},S="wrapper";function M(t){let{components:i,...e}=t;return(0,n.kt)(S,(0,A.Z)({},Q,e,{components:i,mdxType:"MDXLayout"}),(0,n.kt)(l,{mdxType:"Info"}),(0,n.kt)(B,{mdxType:"IconGroups"}),(0,n.kt)(E,{mdxType:"DDDinfo"}),(0,n.kt)("p",{css:a.iv`
     text-align: center;
     font-size: 36px;
     font-weight: 600;
