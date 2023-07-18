@@ -1,67 +1,51 @@
+import { css, jsx } from "@emotion/react";
 import Link from "@docusaurus/Link";
 import { Divider } from "@mui/joy";
 import { CustomBulletUl } from "@site/src/components/CustomBulletUl";
 import { FocusButton } from "@site/src/components/FocusButton";
+import { Info } from "@site/src/components/Home/en/Info";
+import { SponsorList } from "@site/src/components/Home/en/Sponsor-list";
+import { IconGroups } from "@site/src/components/Home/en/IconGroups";
+import { DDDinfo } from "@site/src/components/Home/en/DDDinfo";
 
-- Event Dates: 9/16 ~ 9/17
-- Submission Deadline: June 30, 2023
-- Selection Interviews: Expected from July 1 to July 14.
-- Result Notification: Expected on July 17.
+<Info />
 
-The theme of this year's conference is "Inspiration." We are collecting real stories from DDD practitioners from around the world and inviting them to share their journey of change, experiences, and growth.
+<IconGroups />
 
-The collection of topics includes but is not limited to:
+<DDDinfo />
 
-<CustomBulletUl bullet="→ ">
-  <li>
-    Real cases from various industries, sharing both successful experiences and
-    lessons learned.
-  </li>
-  <li>
-    Transformation and impact on team collaboration and organizational culture.
-  </li>
-  <li>Practical application of DDD strategies and tactics.</li>
-  <li>Architecture design and transitioning legacy systems.</li>
-  <li>On-site programming.</li>
-  <li>
-    Integrating DDD with other topics in practical work, e.g., Agile, DevOps,
-    testing, UX, and other fields.
-  </li>
-</CustomBulletUl>
-
-<FocusButton
-  component="a"
-  href="https://dddtaiwan.kktix.cc/events/dddtwconf2023"
-  target="_blank"
-  rel="noopener noreferrer"
+<p
+  css={css`
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+  `}
 >
-  <Box
-    sx={{
-      fontSize: "1.5em",
-    }}
-  >
-    Join Us
-  </Box>
-  <Box>as a Problem Resolver</Box>
-</FocusButton>
+  Sponsors
+</p>
+
+<SponsorList />
 
 <Divider sx={{ mt: "2rem", mb: "2rem" }} />
 
-## About Us
+<p
+  css={css`
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+  `}
+>
+  Welcome to Join as a Volunteer
+</p>
 
-Domain Driven Design Taiwan Community (DDDTW) is a community formed by enthusiasts of domain-driven design. We primarily focus on exploring the true business needs and problems to be solved from a business perspective. Through a series of cross-organizational collaborations and stakeholder communications, we design solutions that meet the requirements and create value.
-
-Founded in 2018, we are passionate about sharing, technology, and learning. Our volunteers include software engineers, architects, product managers, designers, and various partners who love domain-driven design. Our Facebook community has nearly 4,500 members and continues to grow.
-
-Since our inception, we have accumulated extensive experience in both online and offline activities. These include book clubs, meetup presentations, workshops, and even hackathons. In 2020 and 2021, we organized the first and second Domain Driven Design Conference. In addition to inviting industry professionals to share their expertise, we also collaborate regularly with various communities, accumulating a wealth of practical experience in development.
-
-<FocusButton component={Link} to="volunteer">
-  <Box
-    sx={{
-      fontSize: "1.5em",
-    }}
-  >
-    Join Us
-  </Box>
-  <Box>as a Volunteer</Box>
-</FocusButton>
+<p
+  css={css`
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  `}
+>
+  Every event requires volunteer to contribute to make the event run smoothly.
+  If you are interested in DDD, welcome to
+  <Link to="/volunteer"> join as a volunteer </Link>！
+</p>
