@@ -61,6 +61,7 @@ const SponsorList = memo(function SponsorList() {
 
         {sponsors.sugarDaddy.map((item) => (
           <div
+            key={item.company}
             css={css`
               text-align: center;
               display: flex;
@@ -108,6 +109,7 @@ const SponsorList = memo(function SponsorList() {
 
         {sponsors.daddy.map((item) => (
           <div
+            key={item.company}
             css={css`
               text-align: center;
               display: flex;

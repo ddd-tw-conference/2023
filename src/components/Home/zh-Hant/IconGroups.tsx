@@ -38,6 +38,7 @@ const IconGroups = memo(function IconGroups() {
     >
       {infos.map((item) => (
         <div
+          key={item.title}
           css={css`
             text-align: center;
             display: flex;
