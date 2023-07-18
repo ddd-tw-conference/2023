@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import { Card, CardContent, Stack } from "@mui/joy";
-import thumbnail from "@site/src/assets/cover.png";
+import thumbnail from "@site/src/assets/banner_zh.jpg";
 import Image from "@theme/IdealImage";
 import { ReactNode, memo } from "react";
 
