@@ -54,7 +54,7 @@ const SponsorList = memo(function SponsorList() {
               margin: 0;
             `}
           >
-            黃金級贊助
+            Gold Sponsors
           </h2>
           <SugarDaddy />
         </div>
@@ -101,7 +101,7 @@ const SponsorList = memo(function SponsorList() {
               margin: 0;
             `}
           >
-            特別贊助
+            Special Sponsors
           </h2>
           <Daddy />
         </div>
