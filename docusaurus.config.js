@@ -80,7 +80,7 @@ const config = {
           {
             label: "Sponsors",
             position: "right",
-            to: "volunteer",
+            to: "sponsor",
           },
           {
             label: "Program",
