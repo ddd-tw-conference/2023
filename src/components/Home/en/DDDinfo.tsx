@@ -11,7 +11,7 @@ const DDDinfo = memo(function DDDinfo() {
         display: flex;
         flex-direction: column;
         gap: 48px;
-        background: #766d94;
+        background: rgba(118, 109, 148, 0.4);
         padding: 60px;
         justify-content: center;
       `}
