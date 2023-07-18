@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import DDDlogo from "@site/src/assets/ddd.png";
+import ThemedImage from "@theme/ThemedImage";
 import { memo } from "react";
-
 const DDDinfo = memo(function DDDinfo() {
   return (
     <div
@@ -24,13 +25,16 @@ const DDDinfo = memo(function DDDinfo() {
           align-items: center;
         `}
       >
-        <img
-          alt="ddd-logo"
-          src={DDDlogo}
+        <ThemedImage
           css={css`
             width: 172px;
             height: 162px;
           `}
+          alt="Docusaurus themed image"
+          sources={{
+            light: useBaseUrl(DDDlogo),
+            dark: useBaseUrl(DDDlogo),
+          }}
         />
         <p>
           DDDTW 社群致力於推廣 Domain-Driven Design
