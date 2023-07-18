@@ -2,8 +2,8 @@
 import { css, jsx } from "@emotion/react";
 import Logo104 from "@site/src/assets/104.png";
 import JetBrains from "@site/src/assets/jet-brains.png";
+import { Daddy } from "@site/src/icons/Daddy";
 import { SugarDaddy } from "@site/src/icons/SugarDaddy";
-import { Daddy } from "@site/src/icons/daddy";
 import { memo } from "react";
 
 const SponsorList = memo(function SponsorList() {
