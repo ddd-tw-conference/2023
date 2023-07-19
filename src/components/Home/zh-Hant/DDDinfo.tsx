@@ -1,11 +1,20 @@
 /** @jsx jsx */
 import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import DDDlogo from "@site/src/assets/ddd.png";
-import ThemedImage from "@theme/ThemedImage";
+import Image from "@theme/IdealImage";
 import { memo } from "react";
+
 const DDDinfo = memo(function DDDinfo() {
+  const imageStyle = css`
+    min-width: 172px;
+    min-height: 162px;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  `;
+
   return (
     <div
       css={css`
@@ -25,17 +34,10 @@ const DDDinfo = memo(function DDDinfo() {
           align-items: center;
         `}
       >
-        <ThemedImage
-          css={css`
-            width: 172px;
-            height: 162px;
-          `}
-          alt="Docusaurus themed image"
-          sources={{
-            light: useBaseUrl(DDDlogo),
-            dark: useBaseUrl(DDDlogo),
-          }}
-        />
+        <div css={imageStyle}>
+          <Image img={DDDlogo} />
+        </div>
+
         <p>
           DDDTW 社群致力於推廣 Domain-Driven Design
           此一風行全球的方法論在臺灣扎根。五年來，我們已經於全臺舉辦了上百場活動，吸引上千人來理解甚至實踐

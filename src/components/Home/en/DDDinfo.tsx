@@ -1,12 +1,19 @@
 /** @jsx jsx */
 import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import DDDlogo from "@site/src/assets/ddd.png";
-import ThemedImage from "@theme/ThemedImage";
+import Image from "@theme/IdealImage";
 import { memo } from "react";
 
 const DDDinfo = memo(function DDDinfo() {
+  const imageStyle = css`
+    min-width: 172px;
+    min-height: 162px;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  `;
   return (
     <div
       css={css`
@@ -26,17 +33,10 @@ const DDDinfo = memo(function DDDinfo() {
           align-items: center;
         `}
       >
-        <ThemedImage
-          css={css`
-            width: 172px;
-            height: 162px;
-          `}
-          alt="Docusaurus themed image"
-          sources={{
-            light: useBaseUrl(DDDlogo),
-            dark: useBaseUrl(DDDlogo),
-          }}
-        />
+        <div css={imageStyle}>
+          <Image img={DDDlogo} />
+        </div>
+
         <p>
           DDDTW community is dedicated to promoting the widely adopted
           methodology of Domain-Driven Design in Taiwan. Over the past five

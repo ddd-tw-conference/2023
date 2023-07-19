@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import Book from "@site/src/assets/book.png";
 import Hit from "@site/src/assets/hit.png";
 import Light from "@site/src/assets/light.png";
-import ThemedImage from "@theme/ThemedImage";
+import Image from "@theme/IdealImage";
 import { memo } from "react";
 
 const IconGroups = memo(function IconGroups() {
@@ -32,20 +31,19 @@ const IconGroups = memo(function IconGroups() {
 
   const InfoImage = (props) => {
     const { item } = props;
-    const path = useBaseUrl(props.item.img);
+    const imgStyle = css`
+      width: 80px;
+      height: 80px;
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    `;
 
     return (
-      <ThemedImage
-        css={css`
-          width: 80px;
-          height: 80px;
-        `}
-        alt={item.title}
-        sources={{
-          light: path,
-          dark: path,
-        }}
-      />
+      <div css={imgStyle}>
+        <Image img={item.img} />
+      </div>
     );
   };
 
