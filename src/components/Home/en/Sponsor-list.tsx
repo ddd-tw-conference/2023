@@ -1,11 +1,10 @@
 /** @jsx jsx */
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import { css, jsx } from "@emotion/react";
 import Logo104 from "@site/src/assets/104.png";
 import JetBrains from "@site/src/assets/jet-brains.png";
 import { Daddy } from "@site/src/icons/Daddy";
 import { SugarDaddy } from "@site/src/icons/SugarDaddy";
-import ThemedImage from "@theme/ThemedImage";
+import Image from "@theme/IdealImage";
 import { memo } from "react";
 
 const SponsorList = memo(function SponsorList() {
@@ -27,19 +26,19 @@ const SponsorList = memo(function SponsorList() {
 
   const SponsorImage = (props) => {
     const { item, style } = props;
-    const inlineStyle = css`
+    const imgStyle = css`
       ${style}
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     `;
-    const path = useBaseUrl(props.item.img);
+
     return (
-      <ThemedImage
-        css={inlineStyle}
-        alt={item.company}
-        sources={{
-          light: path,
-          dark: path,
-        }}
-      />
+      <div css={imgStyle}>
+        <Image img={item.img} />
+      </div>
     );
   };
 
