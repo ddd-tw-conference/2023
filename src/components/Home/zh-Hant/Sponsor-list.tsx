@@ -7,41 +7,41 @@ import { SugarDaddy } from "@site/src/icons/SugarDaddy";
 import Image from "@theme/IdealImage";
 import { memo } from "react";
 
+const sponsors = {
+  sugarDaddy: [
+    {
+      company: "104",
+      img: Logo104,
+    },
+  ],
+
+  daddy: [
+    {
+      company: "Jet Brains",
+      img: JetBrains,
+    },
+  ],
+};
+
+const SponsorImage = (props) => {
+  const { item, style } = props;
+  const imgStyle = css`
+    ${style}
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  `;
+
+  return (
+    <div css={imgStyle}>
+      <Image img={item.img} />
+    </div>
+  );
+};
+
 const SponsorList = memo(function SponsorList() {
-  const sponsors = {
-    sugarDaddy: [
-      {
-        company: "104",
-        img: Logo104,
-      },
-    ],
-
-    daddy: [
-      {
-        company: "Jet Brains",
-        img: JetBrains,
-      },
-    ],
-  };
-
-  const SponsorImage = (props) => {
-    const { item, style } = props;
-    const imgStyle = css`
-      ${style}
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    `;
-
-    return (
-      <div css={imgStyle}>
-        <Image img={item.img} />
-      </div>
-    );
-  };
-
   return (
     <div
       css={css`

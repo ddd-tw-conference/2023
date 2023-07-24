@@ -5,15 +5,16 @@ import DDDlogo from "@site/src/assets/ddd.png";
 import Image from "@theme/IdealImage";
 import { memo } from "react";
 
+const imageStyle = css`
+  min-width: 172px;
+  min-height: 162px;
+  > img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
 const DDDinfo = memo(function DDDinfo() {
-  const imageStyle = css`
-    min-width: 172px;
-    min-height: 162px;
-    > img {
-      width: 100%;
-      height: 100%;
-    }
-  `;
   return (
     <div
       css={css`
