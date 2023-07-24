@@ -9,7 +9,7 @@ import { memo } from "react";
 const IconGroups = memo(function IconGroups() {
   const infos: {
     title: string;
-    img: string;
+    img: Img;
     info: string;
   }[] = [
     {
@@ -25,7 +25,7 @@ const IconGroups = memo(function IconGroups() {
     {
       title: "業務與 IT 的共同目標",
       img: Hit,
-      info: "成功的產品需要明確的共同目標。DDD 能夠協助衆多產品利益關係人建立共同目標,透過共同語言確保軟體實踐達成商業目標。",
+      info: "成功的產品需要明確的共同目標。DDD 能夠協助衆多產品利益關係人建立共同目標，透過共同語言確保軟體實踐達成商業目標。",
     },
   ];
   const InfoImage = (props) => {

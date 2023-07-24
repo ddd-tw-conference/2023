@@ -9,7 +9,7 @@ import { memo } from "react";
 const IconGroups = memo(function IconGroups() {
   const infos: {
     title: string;
-    img: string;
+    img: Img;
     info: string;
   }[] = [
     {
