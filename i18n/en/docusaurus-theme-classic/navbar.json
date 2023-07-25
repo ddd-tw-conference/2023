@@ -1,23 +1,23 @@
 {
   "item.label.About": {
-    "message": "關於我們"
+    "message": "About"
   },
   "item.label.About DDDesign TW": {
-    "message": "關於 DDDesign TW"
+    "message": "About DDDesign TW"
   },
   "item.label.Volunteers": {
-    "message": "招募志工"
+    "message": "Volunteers"
   },
   "item.label.Sponsors": {
-    "message": "贊助商"
+    "message": "Sponsors"
   },
   "item.label.Program": {
-    "message": "議程"
+    "message": "Program"
   },
   "item.label.Contact Us": {
-    "message": "聯絡我們"
+    "message": "Contact Us"
   },
   "item.label.Get Ticket": {
-    "message": "購票"
+    "message": "Get Ticket"
   }
 }
