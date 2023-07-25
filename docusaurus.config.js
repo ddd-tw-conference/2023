@@ -83,9 +83,9 @@ const config = {
             to: "sponsor",
           },
           {
-            label: "Program",
-            position: "right",
-            to: "volunteer",
+            label: 'Program',
+            position: 'right',
+            to: 'program',
           },
           {
             label: "Contact Us",
