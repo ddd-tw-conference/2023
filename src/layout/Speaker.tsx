@@ -2,11 +2,17 @@
 import { jsx } from "@emotion/react";
 import { Card, Stack, Typography } from "@mui/joy";
 import thumbnail from "@site/src/assets/program-banner.png";
-import { PROGRAMER } from "@site/src/model/Program";
+import { PROGRAMER, programer_type } from "@site/src/model/Speakers";
 import Image from "@theme/IdealImage";
 import { ReactNode, memo } from "react";
 
-const Program = memo(function Program({ content }: { content: ReactNode }) {
+const Program = memo(function Program({
+  content,
+  speakers,
+}: {
+  content: ReactNode;
+  speakers: programer_type[];
+}) {
   return (
     <Stack
       className="container"
@@ -38,7 +44,7 @@ const Program = memo(function Program({ content }: { content: ReactNode }) {
                 textAlign="center"
                 sx={{ mb: 0.5 }}
               >
-                {programer.zhName}
+                {speakers[index].name}
               </Typography>
             </Card>
           );

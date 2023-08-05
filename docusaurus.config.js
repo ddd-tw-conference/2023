@@ -78,9 +78,14 @@ const config = {
             ],
           },
           {
-            label: "Sponsors",
-            position: "right",
-            to: "sponsor",
+            label: 'Sponsors',
+            position: 'right',
+            to: 'sponsor',
+          },
+          {
+            label: 'Speakers',
+            position: 'right',
+            to: 'speaker',
           },
           {
             label: 'Program',

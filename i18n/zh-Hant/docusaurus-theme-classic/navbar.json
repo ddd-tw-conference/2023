@@ -11,6 +11,9 @@
   "item.label.Sponsors": {
     "message": "贊助商"
   },
+  "item.label.Speakers": {
+    "message": "講者"
+  },
   "item.label.Program": {
     "message": "議程"
   },
