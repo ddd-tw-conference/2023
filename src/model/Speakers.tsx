@@ -80,22 +80,31 @@ export interface Programer {
 export const PROGRAMER: Programer[] = [
   {
     en: { name: "Aotokitsuruya" },
-    zh: { name: "蒼時弦也" },
+    zh: {
+      name: "蒼時弦也",
+      speech: { title: "導入 Domain-Driven Design 的最佳時機" },
+    },
     photo: Aotokitsuruya,
   },
   {
     en: { name: "Arthur" },
-    zh: { name: "" },
+    zh: { name: "國昭", speech: { title: "DDD戰術-柔型要術" } },
     photo: Arthur,
   },
   {
     en: { name: "Chris Simon" },
-    zh: { name: "Chris Simon" },
+    zh: {
+      name: "Chris Simon",
+      speech: { title: "When Customers Don't Share a Language" },
+    },
     photo: ChrisSimon,
   },
   {
     en: { name: "David Ko" },
-    zh: { name: "柯仁傑" },
+    zh: {
+      name: "柯仁傑",
+      speech: { title: "如何利用 Example Mapping 來釐清需求" },
+    },
     photo: DavidKo,
   },
   {
@@ -105,12 +114,18 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Ean" },
-    zh: { name: "Ean" },
+    zh: {
+      name: "Ean",
+      speech: {
+        title:
+          "單兵作戰: 以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐",
+      },
+    },
     photo: Default,
   },
   {
     en: { name: "Fong" },
-    zh: { name: "劉鳳軒" },
+    zh: { name: "劉鳳軒", speech: { title: "你真的懂 SOLID 原則嗎？" } },
     photo: Fong,
   },
   {
@@ -120,17 +135,29 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "James Cheng" },
-    zh: { name: "程章尧" },
+    zh: {
+      name: "程章尧",
+      speech: {
+        title:
+          "DDD Applied - Introducing TDD while breaking down legacy monolith",
+      },
+    },
     photo: JamesCheng,
   },
   {
     en: { name: "Jian-Min, Huang" },
-    zh: { name: "黃健旻" },
+    zh: {
+      name: "黃健旻",
+      speech: {
+        title:
+          "在 Spring Boot 3 + Java 17 中實戰 Domain Driven Design + Clean Architecture",
+      },
+    },
     photo: JianMin,
   },
   {
     en: { name: "Ken Ni" },
-    zh: { name: "倪國凱" },
+    zh: { name: "倪國凱", speech: { title: "這些年我們所追的微服務" } },
     photo: Ni,
   },
   {
@@ -150,17 +177,26 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Kuma Syu" },
-    zh: { name: "Kuma Syu" },
+    zh: {
+      name: "Kuma Syu",
+      speech: { title: "「Code with Me」--- 我們寫了一支 API" },
+    },
     photo: Kuma,
   },
   {
     en: { name: "Lex Liu" },
-    zh: { name: "Lex Liu" },
+    zh: { name: "Lex Liu", speech: { title: "動動手手練練 Event Sourcing" } },
     photo: Lex,
   },
   {
     en: { name: "Matthew Wei" },
-    zh: { name: "魏宣德" },
+    zh: {
+      name: "魏宣德",
+      speech: {
+        title:
+          "Don’t Forget UCD & Balanced Teams: Reap the Full Benefits with Modern Development Practices",
+      },
+    },
     photo: Default,
   },
   {
@@ -171,7 +207,8 @@ export const PROGRAMER: Programer[] = [
     },
     zh: {
       name: "陳勉修",
-      title: "Rakuya Inc.VP",
+      title:
+        "Domain Storytelling— One-size-fits-all 串連產品服務的需求、設計、開發與測試",
       contact: "iamhugh@gmail.com",
       speech: {
         title: "從事件風暴中探索業務指標可觀測性",
@@ -185,15 +222,18 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Miles Chou" },
-    zh: { name: "周建毅" },
+    zh: {
+      name: "周建毅",
+      speech: { title: "在風雨交加的航道上探索 DDD：從困惑到啟發" },
+    },
     photo: Miles,
   },
   {
     en: { name: "Nathan Lu" },
     zh: {
       name: "呂健誠",
-      title:
-        "九年以上的後端工程師，目前於DeFi產品公司擔任工程師。擅長在Go開發與一些儲存系統的應用以及相關的監控上，協助公司的系統逐漸引入具備可觀測性的能力。",
+      title: "從事件風暴中探索業務指標可觀測性",
+      contact: "iamhugh@gmail.com",
       speech: {
         title: "從事件風暴中探索業務指標可觀測性",
         point:
@@ -206,32 +246,51 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Nina Weng" },
-    zh: { name: "Nina Weng" },
+    zh: { name: "Nina Weng", speech: { title: "Event Storming實戰經驗分享" } },
     photo: Nina,
   },
   {
     en: { name: "" },
-    zh: { name: "王彥博" },
+    zh: {
+      name: "王彥博",
+      speech: {
+        title: "偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊",
+      },
+    },
     photo: Wang,
   },
   {
     en: { name: "Steny Liu" },
-    zh: { name: "劉宥辰" },
+    zh: {
+      name: "劉宥辰",
+      speech: {
+        title: "從混亂到組織：DDD與Clean Architecture的持續精進挑戰之道",
+      },
+    },
     photo: Steny,
   },
   {
     en: { name: "Stephen Tung" },
-    zh: { name: "Stephen Tung" },
+    zh: {
+      name: "Stephen Tung",
+      speech: { title: "The Superpowers of Event Sourcing" },
+    },
     photo: Stephen,
   },
   {
     en: { name: "Steven Gao" },
-    zh: { name: "高松" },
+    zh: {
+      name: "高松",
+      speech: { title: "複雜遺留系統的現代化改造方法與實踐" },
+    },
     photo: Default,
   },
   {
     en: { name: "Teddy Chen" },
-    zh: { name: "陳建村" },
+    zh: {
+      name: "陳建村",
+      speech: { title: "用模式語言解壓縮CQRS：以ezKanban系統為例" },
+    },
     photo: Teddy,
   },
   {
@@ -241,7 +300,13 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Water ball" },
-    zh: { name: "水球潘" },
+    zh: {
+      name: "水球潘",
+      speech: {
+        title:
+          "在自己的新創導入 DDD 來迭代開發一個有夠複雜的線上遊戲教育創新產品",
+      },
+    },
     photo: WaterBall,
   },
   {
