@@ -1,20 +1,26 @@
 import Arthur from "@site/src/assets/programer/Arthur.png";
 import Default from "@site/src/assets/programer/default.png";
+import James from "@site/src/assets/programer/james.jpg";
 import Kim from "@site/src/assets/programer/kim-kao-dddconf2023 - Kao Kim 1.png";
 import WaterBall from "@site/src/assets/programer/style=水球潘.png";
+import Wesley from "@site/src/assets/programer/wesley_chiu.png";
 import Wang from "@site/src/assets/programer/王彥博 Soking.png";
 import ChrisSimon from "@site/src/assets/programer/講師-ChrisSimon.png";
 import DavidKo from "@site/src/assets/programer/講師-David Ko.png";
+import Ean from "@site/src/assets/programer/講師-Ean.png";
 import Fong from "@site/src/assets/programer/講師-Fong 劉鳳軒.png";
 import Kuma from "@site/src/assets/programer/講師-Kuma.png";
 import Lex from "@site/src/assets/programer/講師-Lex.png";
 import Miles from "@site/src/assets/programer/講師-Miles.png";
 import Nina from "@site/src/assets/programer/講師-Nina.png";
 import Stephen from "@site/src/assets/programer/講師-Stephen.png";
+import Steven from "@site/src/assets/programer/講師-Steven高松 1.png";
 import Teddy from "@site/src/assets/programer/講師-Teddy 陳建村.png";
+import Vlad from "@site/src/assets/programer/講師-Vlad 1.png";
 import Ni from "@site/src/assets/programer/講師-倪國凱.png";
 import Steny from "@site/src/assets/programer/講師-劉宥辰.png";
 import Nathan from "@site/src/assets/programer/講師-呂健誠.png";
+import David from "@site/src/assets/programer/講師-王威.png";
 import JamesCheng from "@site/src/assets/programer/講師-程章堯.png";
 import Aotokitsuruya from "@site/src/assets/programer/講師-邱政憲 蒼時弦也.png";
 import JianMin from "@site/src/assets/programer/講師-黃健旻 Huang Jian-Min.png";
@@ -110,7 +116,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "David Wang" },
     zh: { name: "王威" },
-    photo: Default,
+    photo: David,
   },
   {
     en: { name: "Ean" },
@@ -121,7 +127,7 @@ export const PROGRAMER: Programer[] = [
           "單兵作戰: 以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐",
       },
     },
-    photo: Default,
+    photo: Ean,
   },
   {
     en: { name: "Fong" },
@@ -131,7 +137,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "James" },
     zh: { name: "James" },
-    photo: Default,
+    photo: James,
   },
   {
     en: { name: "James Cheng" },
@@ -283,7 +289,7 @@ export const PROGRAMER: Programer[] = [
       name: "高松",
       speech: { title: "複雜遺留系統的現代化改造方法與實踐" },
     },
-    photo: Default,
+    photo: Steven,
   },
   {
     en: { name: "Teddy Chen" },
@@ -296,7 +302,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Vlad Khononov" },
     zh: { name: "Vlad Khononov" },
-    photo: Default,
+    photo: Vlad,
   },
   {
     en: { name: "Water ball" },
@@ -312,6 +318,6 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Wesley Chiu" },
     zh: { name: "邱凡遠" },
-    photo: Default,
+    photo: Wesley,
   },
 ];
