@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import Link from "@docusaurus/Link";
-import { jsx } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 import { Card, Stack, Typography } from "@mui/joy";
 import thumbnail from "@site/src/assets/program-banner.png";
 import { PROGRAMER, programer_type } from "@site/src/model/Speakers";
@@ -44,7 +44,17 @@ const Program = memo(function Program({
           {PROGRAMER.map((programer, index) => {
             return (
               <Card key={index} variant="outlined" sx={{ width: 300 }}>
-                <Image img={programer.photo} />
+                <div
+                  css={css`
+                    width: 276px;
+                    height: 220px;
+                    object-fit: contain;
+                    display: flex;
+                    justify-content: center;
+                  `}
+                >
+                  <Image img={programer.photo} />
+                </div>
                 <Typography
                   level="h2"
                   fontSize="md"
