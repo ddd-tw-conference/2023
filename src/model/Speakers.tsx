@@ -137,8 +137,8 @@ export const PROGRAMER: Programer[] = [
     photo: Fong,
   },
   {
-    en: { name: "James" },
-    zh: { name: "James" },
+    en: { name: "James Wang" },
+    zh: { name: "王家駿" },
     photo: James,
   },
   {
@@ -153,7 +153,7 @@ export const PROGRAMER: Programer[] = [
     photo: JamesCheng,
   },
   {
-    en: { name: "Jian-Min, Huang" },
+    en: { name: "Huang Jian" },
     zh: {
       name: "黃健旻",
       speech: {
