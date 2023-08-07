@@ -11,7 +11,7 @@ export default function Page(): JSX.Element {
     <Layout description={siteConfig.tagline}>
       <Index
         content={createElement(
-          require("@site/src/content/en/index.mdx").default
+          require("@site/src/content/zh-Hant/index.mdx").default
         )}
       />
     </Layout>

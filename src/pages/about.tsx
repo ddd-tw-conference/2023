@@ -12,7 +12,7 @@ export default function Page(): JSX.Element {
     >
       <Volunteer
         content={createElement(
-          require("@site/src/content/en/volunteer.mdx").default
+          require("@site/src/content/zh-Hant/volunteer.mdx").default
         )}
       />
     </Layout>
