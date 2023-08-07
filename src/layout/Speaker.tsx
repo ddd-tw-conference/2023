@@ -13,8 +13,6 @@ const Speaker = memo(function Speaker({
   content: ReactNode;
   speaker: programer_type;
 }) {
-  console.log("🚀 ~ speaker:", speaker);
-
   return (
     <Stack
       className="container"
