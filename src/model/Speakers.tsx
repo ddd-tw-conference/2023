@@ -45,6 +45,8 @@ export type SpeechLevel =
 
 export type programer_type = {
   name: string;
+  slug?: string;
+  photo?: Img;
   title?: string;
   contact?: string;
   speech?: {
@@ -121,7 +123,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Ean" },
     zh: {
-      name: "Ean",
+      name: "李民偉",
       speech: {
         title:
           "單兵作戰: 以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐",

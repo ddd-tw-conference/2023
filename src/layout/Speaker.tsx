@@ -1,75 +1,69 @@
 /** @jsx jsx */
-import Link from "@docusaurus/Link";
-import { css, jsx } from "@emotion/react";
-import { Card, Stack, Typography } from "@mui/joy";
-import thumbnail from "@site/src/assets/program-banner.png";
-import { PROGRAMER, programer_type } from "@site/src/model/Speakers";
+import { jsx } from "@emotion/react";
+import { Stack, Typography } from "@mui/joy";
+import thumbnail from "@site/src/assets/speaker-banner.png";
+import { programer_type } from "@site/src/model/Speakers";
 import Image from "@theme/IdealImage";
 import { ReactNode, memo } from "react";
 
-const Program = memo(function Program({
+const Speaker = memo(function Speaker({
   content,
-  speakers,
+  speaker,
 }: {
   content: ReactNode;
-  speakers: programer_type[];
+  speaker: programer_type;
 }) {
+  console.log("🚀 ~ speaker:", speaker);
+
   return (
-    <Link>
+    <Stack
+      className="container"
+      sx={{
+        gap: "2rem",
+        mb: "5rem",
+      }}
+    >
+      <Image img={thumbnail} />
+
       <Stack
-        className="container"
         sx={{
-          gap: "2rem",
-          mb: "5rem",
+          bgcolor: "rgba(118, 109, 148, 0.40)",
+          borderRadius: "4px",
+          padding: "60px",
+          display: "flex",
+          flexDirection: "row",
+          gap: "23px",
+          flexWrap: "wrap",
         }}
       >
-        <Image img={thumbnail} />
-
-        <Typography
-          level="h2"
-          fontSize="md"
-          textAlign="center"
-          sx={{ mb: 0.5 }}
-        >
-          {content}
-        </Typography>
-
         <Stack
-          direction="row"
-          spacing={2}
-          useFlexGap
-          flexWrap="wrap"
-          justifyContent="flex-start"
+          sx={{
+            width: "276px",
+            height: "220px",
+            objectFit: "contain",
+          }}
         >
-          {PROGRAMER.map((programer, index) => {
-            return (
-              <Card key={index} variant="outlined" sx={{ width: 300 }}>
-                <div
-                  css={css`
-                    width: 276px;
-                    height: 220px;
-                    object-fit: contain;
-                    display: flex;
-                    justify-content: center;
-                  `}
-                >
-                  <Image img={programer.photo} />
-                </div>
-                <Typography
-                  level="h2"
-                  fontSize="md"
-                  textAlign="center"
-                  sx={{ mb: 0.5 }}
-                >
-                  {speakers[index].name}
-                </Typography>
-              </Card>
-            );
-          })}
+          <Image img={speaker.photo} />
+        </Stack>
+        <Stack
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Typography
+            level="h2"
+            fontSize="md"
+            textAlign="left"
+            sx={{ mb: 0.5 }}
+          >
+            {speaker.name}
+          </Typography>
+          <Stack>{content}</Stack>
         </Stack>
       </Stack>
-    </Link>
+    </Stack>
   );
 });
 
-export { Program };
+export { Speaker };
