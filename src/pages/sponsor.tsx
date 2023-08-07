@@ -12,7 +12,7 @@ export default function Page(): JSX.Element {
     >
       <Sponsor
         content={createElement(
-          require("@site/src/content/en/sponsorRequest.mdx").default
+          require("@site/src/content/zh-Hant/sponsorRequest.mdx").default
         )}
       />
     </Layout>

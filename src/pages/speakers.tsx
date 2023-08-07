@@ -12,7 +12,7 @@ export default function Page(): JSX.Element {
     <Layout>
       <Program
         content={createElement(
-          require("@site/src/content/en/speaker.mdx").default
+          require("@site/src/content/zh-Hant/speaker.mdx").default
         )}
         speakers={speakers}
       />
