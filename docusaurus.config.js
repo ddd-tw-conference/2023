@@ -21,7 +21,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   i18n: {
-    defaultLocale: "en",
+    defaultLocale: "zh-Hant",
     locales: ["en", "zh-Hant"],
     localeConfigs: {
       en: {
@@ -97,10 +97,10 @@ const config = {
             position: "right",
             to: "volunteer",
           },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
+          // {
+          //   type: "localeDropdown",
+          //   position: "right",
+          // },
           {
             position: "right",
             href: "https://dddtaiwan.kktix.cc/events/dddtwconf2023",
