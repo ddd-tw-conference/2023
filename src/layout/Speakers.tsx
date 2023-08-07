@@ -14,8 +14,6 @@ const Speakers = memo(function Speakers({
   content: ReactNode;
   speakers: programer_type[];
 }) {
-  console.log("🚀 ~ speakers:", speakers);
-
   return (
     <Link>
       <Stack
