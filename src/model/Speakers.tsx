@@ -258,7 +258,7 @@ export const PROGRAMER: Programer[] = [
     photo: Nina,
   },
   {
-    en: { name: "" },
+    en: { name: "Soking" },
     zh: {
       name: "王彥博",
       speech: {
