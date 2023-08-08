@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import Link from "@docusaurus/Link";
-import { css, jsx } from "@emotion/react";
-import DDDlogo from "@site/src/assets/ddd.png";
-import Image from "@theme/IdealImage";
-import { memo } from "react";
+import Link from '@docusaurus/Link';
+import { css, jsx } from '@emotion/react';
+import DDDlogo from '@site/src/assets/ddd.png';
+import Image from '@theme/IdealImage';
+import { memo } from 'react';
 
 const imageStyle = css`
   min-width: 172px;
@@ -24,6 +24,7 @@ const DDDinfo = memo(function DDDinfo() {
         background: rgba(118, 109, 148, 0.4);
         padding: 60px;
         justify-content: center;
+        margin: 100px 0;
       `}
     >
       <div
