@@ -1,23 +1,23 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
-import Logo104 from "@site/src/assets/104.png";
-import JetBrains from "@site/src/assets/jet-brains.png";
-import { Daddy } from "@site/src/icons/Daddy";
-import { SugarDaddy } from "@site/src/icons/SugarDaddy";
-import Image from "@theme/IdealImage";
-import { memo } from "react";
+import { css, jsx } from '@emotion/react';
+import Logo104 from '@site/src/assets/104.png';
+import JetBrains from '@site/src/assets/jet-brains.png';
+import { Daddy } from '@site/src/icons/Daddy';
+import { SugarDaddy } from '@site/src/icons/SugarDaddy';
+import Image from '@theme/IdealImage';
+import { memo } from 'react';
 
 const sponsors = {
   sugarDaddy: [
     {
-      company: "104",
+      company: '104',
       img: Logo104,
     },
   ],
 
   daddy: [
     {
-      company: "Jet Brains",
+      company: 'Jet Brains',
       img: JetBrains,
     },
   ],
@@ -51,6 +51,7 @@ const SponsorList = memo(function SponsorList() {
         justify-content: center;
         align-items: center;
         gap: 60px;
+        margin-bottom: 200px;
       `}
     >
       <div
