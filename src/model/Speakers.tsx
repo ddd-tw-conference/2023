@@ -96,7 +96,7 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Arthur" },
-    zh: { name: "國昭", speech: { title: "DDD戰術-柔型要術" } },
+    zh: { name: "Arthur", speech: { title: "DDD戰術-柔型要術" } },
     photo: Arthur,
   },
   {
@@ -110,7 +110,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "David Ko" },
     zh: {
-      name: "柯仁傑",
+      name: "David Ko",
       speech: { title: "如何利用 Example Mapping 來釐清需求" },
     },
     photo: DavidKo,
@@ -123,7 +123,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Ean" },
     zh: {
-      name: "李民偉",
+      name: "Ean",
       speech: {
         title:
           "單兵作戰: 以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐",
@@ -133,12 +133,12 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Fong" },
-    zh: { name: "劉鳳軒", speech: { title: "你真的懂 SOLID 原則嗎？" } },
+    zh: { name: "Fong", speech: { title: "你真的懂 SOLID 原則嗎？" } },
     photo: Fong,
   },
   {
     en: { name: "James Wang" },
-    zh: { name: "王家駿" },
+    zh: { name: "James" },
     photo: James,
   },
   {
@@ -173,7 +173,7 @@ export const PROGRAMER: Programer[] = [
       name: "Kim Kao",
     },
     zh: {
-      name: "高翊凱",
+      name: "Kim",
       speech: {
         level: [SPEECH_LEVEL.zh.MIDDLE],
         title: "Value Flywheel Effect : 那些藏在價值飛輪下你該知道的策略",
@@ -214,7 +214,7 @@ export const PROGRAMER: Programer[] = [
       contact: "0930062400",
     },
     zh: {
-      name: "陳勉修",
+      name: "Michael",
       title:
         "Domain Storytelling— One-size-fits-all 串連產品服務的需求、設計、開發與測試",
       contact: "iamhugh@gmail.com",
@@ -231,7 +231,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Miles Chou" },
     zh: {
-      name: "周建毅",
+      name: "Miles",
       speech: { title: "在風雨交加的航道上探索 DDD：從困惑到啟發" },
     },
     photo: Miles,
@@ -239,7 +239,7 @@ export const PROGRAMER: Programer[] = [
   {
     en: { name: "Nathan Lu" },
     zh: {
-      name: "呂健誠",
+      name: "雷N",
       title: "從事件風暴中探索業務指標可觀測性",
       contact: "iamhugh@gmail.com",
       speech: {
@@ -254,13 +254,13 @@ export const PROGRAMER: Programer[] = [
   },
   {
     en: { name: "Nina Weng" },
-    zh: { name: "Nina Weng", speech: { title: "Event Storming實戰經驗分享" } },
+    zh: { name: "Nina", speech: { title: "Event Storming實戰經驗分享" } },
     photo: Nina,
   },
   {
     en: { name: "Soking" },
     zh: {
-      name: "王彥博",
+      name: "Soking",
       speech: {
         title: "偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊",
       },
