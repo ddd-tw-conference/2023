@@ -61,6 +61,7 @@ export interface Programer {
   en: programer_type;
   zh: programer_type;
   photo: Img;
+  slug?: string;
 }
 
 /**
