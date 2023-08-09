@@ -2,17 +2,13 @@ import { PROGRAMER } from '@site/src/model/Speakers';
 import { useEffect, useState } from 'react';
 
 const useFindSpeaker = () => {
-  const [speaker, setSpeaker] = useState(PROGRAMER[0]);
+  const [speaker, setSpeaker] = useState({});
 
   useEffect(() => {
-    const path = window.location.pathname.split('/');
-    console.log('🚀 ~ useEffect ~ path:', path);
-    const speakerName = path[path.length - 1];
-    console.log('🚀 ~ useEffect ~ speakerName:', speakerName);
+    const speakerName = window.location.pathname.match(/\/speaker\/([^/]+)\/?$/)[1];
     const speaker = PROGRAMER.find(
       (speaker) => speaker.en.name.toLowerCase().replace(' ', '_') === speakerName
     );
-    console.log('🚀 ~ useEffect ~ speaker:', speaker);
 
     setSpeaker({
       ...speaker,
