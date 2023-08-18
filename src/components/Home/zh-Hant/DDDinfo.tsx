@@ -33,6 +33,7 @@ const DDDinfo = memo(function DDDinfo() {
           gap: 24px;
           justify-content: center;
           align-items: center;
+          flex-wrap: wrap;
         `}
       >
         <div css={imageStyle}>
