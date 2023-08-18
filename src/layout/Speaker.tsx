@@ -51,12 +51,18 @@ const Speaker = memo(function Speaker({
             gap: '12px',
           }}
         >
-          <Typography level="h4" fontSize="md" textAlign="left" sx={{ mb: 0.5 }}>
+          <Typography
+            level="h4"
+            fontSize="md"
+            textAlign="left"
+            sx={{ mb: 0.5, textWrap: 'nowrap' }}
+          >
             {speaker.name}
           </Typography>
           <Stack
             sx={{
               fontSize: '1rem',
+              minWidth: '230px',
             }}
           >
             {content}
