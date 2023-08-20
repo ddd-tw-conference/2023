@@ -6,7 +6,7 @@ const BASE_URL = process.env["BASE_URL"] ?? "/2023/";
 
 const title = "DDDesign TW";
 const description =
-  'The DDDesign TW team is pleased to announce the official dates for the DDDesign TW Conference, which will be held on September 16th and 17th. The theme of this year\'s conference is "Inspire." Building on our past successes, we aim to provide participants with a unique opportunity to experience the innovation and inspiration of DDD and discover the potential applications of DDD in their everyday work.';
+  "DDD 年會團隊在此正式宣佈：DDDTW 領域驅動設計年會，即將於 9/16, 9/17 盛大舉辦！本次年會主題為：「啟發」。依循著過去的足跡，期望讓參與者在活動中感受到 DDD 的創新與靈感，啟發參與者在日常工作中應用 DDD 的可能性。";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -20,16 +20,6 @@ const config = {
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  i18n: {
-    defaultLocale: "zh-Hant",
-    locales: ["en", "zh-Hant"],
-    localeConfigs: {
-      en: {
-        label: "English",
-        direction: "ltr",
-      },
-    },
-  },
 
   presets: [
     [
@@ -62,49 +52,45 @@ const config = {
         },
         items: [
           {
-            label: "About",
+            label: "關於我們",
             position: "right",
             to: "about",
             type: "dropdown",
             items: [
               {
-                label: "About DDDesign TW",
+                label: "關於 DDDesign TW",
                 href: "https://www.facebook.com",
               },
               {
-                label: "Volunteers",
+                label: "招募志工",
                 to: "volunteer",
               },
             ],
           },
           {
-            label: "Sponsors",
+            label: "贊助商",
             position: "right",
             to: "sponsor",
           },
           {
-            label: "Speakers",
+            label: "講者",
             position: "right",
             to: "speakers",
           },
           {
-            label: "Program",
+            label: "議程",
             position: "right",
             to: "speakers",
           },
           {
-            label: "Contact Us",
+            label: "聯絡我們",
             position: "right",
             to: "volunteer",
           },
-          // {
-          //   type: "localeDropdown",
-          //   position: "right",
-          // },
           {
             position: "right",
             href: "https://dddtaiwan.kktix.cc/events/dddtwconf2023",
-            html: '<button style="background: #9ABAEB;color:#242526;display: flex;padding: 9px 22px;border-radius: 4px;justify-content: center;align-items: center;gap: 10px;">Get Ticket</button>',
+            html: "購票",
           },
         ],
       },

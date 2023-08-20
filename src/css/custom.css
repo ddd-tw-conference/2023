@@ -38,3 +38,22 @@ a.MuiButton-root:hover {
   color: var(--ifm-font-color-base);
   text-decoration: none;
 }
+
+.navbar__inner a.navbar__item:last-of-type {
+  display: flex;
+  padding: 0.5625rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.25rem;
+  background: var(--ifm-color-primary);
+  color: #242526;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__inner a.navbar__item:last-of-type:hover,
+.navbar__inner a.navbar__item:last-of-type:focus,
+.navbar__inner a.navbar__item:last-of-type:active {
+  outline: 1px solid var(--ifm-color-primary-lighter);
+  background: var(--ifm-color-primary-darker);
+}

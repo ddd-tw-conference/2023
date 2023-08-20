@@ -8,7 +8,7 @@ export default function Page(): JSX.Element {
   return (
     <Layout
       title="Join Us as a Volunteer"
-      description="As the conference approaches, we are still in need of more volunteer partners to join us, to participate in the conference preparations, and to make the event even more perfect together!"
+      description="隨著年會即將舉辦，我們仍舊需要更多的志工夥伴的加入，一起參與年會籌備，一起將年會舉辦的更完美！"
     >
       <Volunteer
         content={createElement(

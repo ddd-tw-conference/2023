@@ -8,7 +8,7 @@ export default function Page(): JSX.Element {
   return (
     <Layout
       title="Join Us as a Sponsor"
-      description="We sincerely invite you to join us, as this will be an excellent opportunity for your brand to gain exposure!"
+      description="誠摯邀請您加入我們的行列，這會是您品牌形象絕佳的曝光機會！"
     >
       <Sponsor
         content={createElement(
