@@ -80,7 +80,7 @@ const config = {
           {
             label: "議程",
             position: "right",
-            to: "speakers",
+            to: "agenda",
           },
           {
             label: "聯絡我們",
