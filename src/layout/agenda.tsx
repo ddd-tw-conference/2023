@@ -7,6 +7,7 @@ import { ReactNode, memo, useMemo } from "react";
 import { createContext } from "../components/createContext";
 import { DifficultyOff } from "../icons/DifficultyOff";
 import { DifficultyOn } from "../icons/DifficultyOn";
+import { MaterialSymbolsArrowRight } from "../icons/MaterialSymbolsArrowRight";
 
 type Speaker = {
   name: ReactNode;
@@ -350,19 +351,19 @@ const DayAgendaTable = memo(function DayAgendaTable<
                                   display: flex;
                                   align-items: center;
                                   gap: 0.5rem;
-                                  &:before {
-                                    content: "🢒";
-                                  }
                                 `}
                               >
                                 <Link
                                   css={css`
+                                    display: flex;
+                                    align-items: center;
                                     &:not(:focus, :hover, :active) {
                                       color: inherit;
                                     }
                                   `}
                                   to={`/speaker/${s}`}
                                 >
+                                  <MaterialSymbolsArrowRight />
                                   {translation.speaker[s].name}
                                 </Link>
                               </li>
