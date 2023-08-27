@@ -1,37 +1,7 @@
-# Website
+# Vue 3 + Vite
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Installation
+## Recommended IDE Setup
 
-```sh
-pnpm i
-```
-
-## Local Development
-
-```sh
-pnpm run start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-To develop with `zh-Hant` locale, run:
-
-```sh
-pnpm run start:zh
-```
-
-## Build
-
-```
-pnpm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-If you want to deploy the distribution under path other than `/2023/`, you can pass the environment variable `BASE_URL` to the build command:
-
-```sh
-BASE_URL=/ pnpm run build
-```
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
