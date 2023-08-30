@@ -2,10 +2,10 @@
   <section class="container mx-auto">
     <div class="banner-main">
       <div class="hidden sm:block">
-        <img src="../assets/banner-volunteer.png" alt="Banner" />
+        <img src="/images/banner-volunteer.png" alt="Banner" />
       </div>
       <div class="block sm:hidden">
-        <img src="../assets/banner-mobile-volunteer.png" alt="Banner" />
+        <img src="/images/banner-mobile-volunteer.png" alt="Banner" />
       </div>
     </div>
     <h2 class="text-3xl mb-3 mt-3">加入志工</h2>
@@ -20,5 +20,11 @@
       </li>
       <li>不用再猶豫了！一起加入我們吧！</li>
     </ul>
+
+    <div class="pt-10 pb-10">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScHzz1R2VWTucFQ3rZfPfod6MjPeSZ1hLEC74p2Ncnmd-vtEg/viewform" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5">
+        加入志工
+      </a>
+    </div>
   </section>
 </template>

@@ -2,10 +2,10 @@
   <section class="container mx-auto">
     <div class="banner-main">
       <div class="hidden sm:block">
-        <img src="../assets/banner-about.png" alt="Banner" />
+        <img src="/images/banner-about.png" alt="Banner" />
       </div>
       <div class="block sm:hidden">
-        <img src="../assets/banner-mobile-about.png" alt="Banner" />
+        <img src="/images/banner-mobile-about.png" alt="Banner" />
       </div>
     </div>
     <h2 class="text-3xl mb-3 mt-3">大會資訊</h2>

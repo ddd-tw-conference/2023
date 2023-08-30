@@ -1,12 +1,12 @@
 <template>
-  <setion>
+  <section>
     <div class="container mx-auto">
       <div class="banner-main">
         <div class="hidden sm:block">
-          <img src="../assets/banner-agenda.png" alt="Banner" />
+          <img src="/images/banner-agenda.png" alt="Banner" />
         </div>
         <div class="block sm:hidden">
-          <img src="../assets/banner-mobile-agenda.png" alt="Banner" />
+          <img src="/images/banner-mobile-agenda.png" alt="Banner" />
         </div>
       </div>
       <div class="p-5 pt-10 bg-blue-900/30">
@@ -30,28 +30,36 @@
           <p>{{ agendaInfo.content9 }}</p>
           <p>{{ agendaInfo.content10 }}</p>
           <p>{{ agendaInfo.content11 }}</p>
-          <p><a :href="agendaInfo.website" target="_blank">{{ agendaInfo.website }}</a></p>
-          <p><a :href="agendaInfo.website2" target="_blank">{{ agendaInfo.website2 }}</a></p>
-          <p><a :href="agendaInfo.website3" target="_blank">{{ agendaInfo.website3 }}</a></p>
-          <p><a :href="agendaInfo.website4" target="_blank">{{ agendaInfo.website4 }}</a></p>
+          <p class="hover:text-cyan-500"><a :href="agendaInfo.website" target="_blank">{{ agendaInfo.website }}</a></p>
+          <p class="hover:text-cyan-500"><a :href="agendaInfo.website2" target="_blank">{{ agendaInfo.website2 }}</a></p>
+          <p class="hover:text-cyan-500"><a :href="agendaInfo.website3" target="_blank">{{ agendaInfo.website3 }}</a></p>
+          <p class="hover:text-cyan-500"><a :href="agendaInfo.website4" target="_blank">{{ agendaInfo.website4 }}</a></p>
           <p>{{ agendaInfo.book }}</p>
           <p>{{ agendaInfo.book2 }}</p>
           <div class="text-end"><button @click="$router.back()" class="mt-10 p-2 bg-blue-400/20 hover:bg-blue-400/40 rounded-xl">返回</button></div>
-        
       </div>
     </div>
-  </setion>
+  </section>
 </template>
 
 <script>
-import agendaData from '../data/agendaData';
+import { useRoute, useRouter } from 'vue-router';
+import agendaData from '../data/agendaData'; // Import your agenda data
+import { computed } from 'vue';
 
 export default {
-  computed: {
-    agendaInfo() {
-      const agendaTitle = decodeURIComponent(this.$route.params.agendaDetails);
-      return agendaData.find(agenda => agenda.title === agendaTitle);
-    }
-  }
+  setup() {
+    const route = useRoute();
+
+    const agendaID = route.params.agendaId
+    const agendaInfo = computed(()=> {
+      return agendaData.filter(agenda => agenda.id === agendaID)[0]
+    })
+
+
+    return {
+      agendaInfo,
+    };
+  },
 };
 </script>

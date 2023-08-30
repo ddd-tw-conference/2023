@@ -2,10 +2,10 @@
   <section class="container mx-auto">
     <div class="banner-main">
       <div class="hidden sm:block">
-        <img src="../assets/banner-agenda.png" alt="Banner" />
+        <img src="/images/banner-agenda.png" alt="Banner" />
       </div>
       <div class="block sm:hidden">
-        <img src="../assets/banner-mobile-agenda.png" alt="Banner" />
+        <img src="/images/banner-mobile-agenda.png" alt="Banner" />
       </div>
     </div>
     <h2 class="text-3xl mb-3 mt-3">議程資訊</h2>
@@ -33,36 +33,51 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">09:30 ~ 10:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30301">Balancing Coupling in Software Design</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30301">
+                    Balancing Coupling in Software Design
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Vlad%20Khononov">Vlad Khononov</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Vlad Khononov">Vlad Khononov</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：Keynotes</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30201">Balancing Coupling in Software Design</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30201">
+                    Balancing Coupling in Software Design
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Nina">Nina</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Nina">Nina</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20201">EventStorming 實戰經驗分享</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room20201">
+                    EventStorming 實戰經驗分享
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/蒼時弦也">蒼時弦也</a></strong>
+                  講者：
+                  <strong class="text-xl">
+                    <router-link to="/speakers/蒼時弦也">蒼時弦也</router-link>
+                  </strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -75,39 +90,50 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">10:30 ~ 11:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30302">Practical experience of applying DDD and CA in Spring Boot 3 + Java 17</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30302">
+                    Practical experience of applying DDD and CA in Spring Boot 3 + Java 17
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/黃健旻">黃健旻</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/黃健旻">黃健旻</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30202">Don’t Forget UCD & Balanced Teams: Reap the Full Benefits with Modern Development Practices</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30202">
+                    Don’t Forget UCD & Balanced Teams: Reap the Full Benefits with Modern Development Practices
+                  </router-link></h2>
                 <h3 class="mb-2">
-                  講者：<strong class="text-xl"><a href="/speakers/魏宣德">魏宣德</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/魏宣德">魏宣德</router-link></strong>
                 </h3>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/邱凡遠">邱凡遠</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/邱凡遠">邱凡遠</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20202">偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊 (1/2)</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room20202">
+                    偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Soking">Soking</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Soking">Soking</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：工作坊</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -120,39 +146,38 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">11:30 ~ 12:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30303">The Superpowers of Event Sourcing</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30303">
+                    The Superpowers of Event Sourcing
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Stephen%20Tung">Stephen Tung</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Stephen Tung">Stephen Tung</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30203">DDD Applied - Introducing TDD while breaking down legacy monolith</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30203">
+                    DDD Applied - Introducing TDD while breaking down legacy monolith
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Stephen%20Tung">程章尧</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/程章尧">程章尧</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20202">偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊 (2/2)</a></h2>
-                <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Soking">Soking</a></strong>
-                </h3>
-                <p class="mt-3">類型：工作坊</p>
-                <p class="flex items-center">
-                  <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                </p>
             </td>
           </tr>
           <tr>
@@ -164,37 +189,49 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">13:15 ~ 14:00</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30304">探索系統的可觀測性</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30304">
+                    探索系統的可觀測性
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/雷N">雷 N</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/雷N">雷N</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30204">When Customers Don't Share a Language（線上）</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30204">
+                    When Customers Don't Share a Language（線上）
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Chris%20Simon">Chris Simon</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Chris Simon">Chris Simon</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20204">動動手手練練 Event Sourcing 難度</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room20204">
+                    動動手手練練 Event Sourcing 難度
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Lex%20Liu">Lex Liu</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Lex Liu">Lex Liu</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：工作坊</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -207,37 +244,49 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">13:15 ~ 14:00</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30305">這些年我們所追的微服務</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30305">
+                    這些年我們所追的微服務
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/倪國凱">倪國凱</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/倪國凱">倪國凱</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30205">用 Constructor theory 实现架构演进和治理</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30205">
+                    用 Constructor theory 实现架构演进和治理
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/王威">王威</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/王威">王威</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
-            <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20205">如何利用 Example Mapping 來釐清需求 (1/2)</a></h2>
+            <td class="bg-cyan-500/10" style="border-bottom: 0">
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room20205">
+                    如何利用 Example Mapping 來釐清需求
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/David%20Ko">David Ko</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/David Ko">David Ko</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：工作坊</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -246,43 +295,41 @@
             <th class="pin text-xl font-semibold bg-sky-950">15:00 ~ 15:15<br />休息</th>
             <td class="bg-sky-950/20"></td>
             <td class="bg-sky-950/20"></td>
-            <td class="bg-sky-950/20"></td>
+            <td class="bg-cyan-500/10 text-yellow-300" style="border-bottom: 0; border-top:0; vertical-align: middle;">* 不休息，讓我們繼續戰下去！</td>
           </tr>
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">15:15 ~ 16:00</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30306">在風雨交加的航道上探索 DDD：從困惑到啟發</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30306">
+                    在風雨交加的航道上探索 DDD：從困惑到啟發
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Miles">Miles</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Miles">Miles</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30206">複雜遺留系統的現代化改造方法與實踐（線上）</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30206">
+                    複雜遺留系統的現代化改造方法與實踐（線上）
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/高松">高松</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/高松">高松</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
-            <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20205">如何利用 Example Mapping 來釐清需求 (2/2)</a></h2>
-                <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/David%20Ko">David Ko</a></strong>
-                  講者：<strong class="text-xl"></strong>
-                </h3>
-                <p class="mt-3">類型：工作坊</p>
-                <p class="flex items-center">
-                  <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                </p>
+            <td class="bg-cyan-500/10" style="border-top:0;">
             </td>
           </tr>
 
@@ -295,37 +342,49 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">16:15 ~ 17:45</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30307">從混亂到組織：DDD 與 Clean Architecture 的持續精進挑戰之道</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30307">
+                    從混亂到組織：DDD 與 Clean Architecture 的持續精進挑戰之道
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/劉宥辰">劉宥辰</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/劉宥辰">劉宥辰</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-lime-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/30207">用模式語言解壓縮 CQRS：以 ezKanban 系統為例</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room30207">
+                    用模式語言解壓縮 CQRS：以 ezKanban 系統為例
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/陳建村">陳建村</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/陳建村">陳建村</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
             <td class="bg-cyan-500/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/20207">「Code with Me」- 我們寫了一支 API</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/room20207">
+                    「Code with Me」- 我們寫了一支 API
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Kuma%20Syu">Kuma Syu</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Kuma Syu">Kuma Syu</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：工作坊</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -346,14 +405,18 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">09:30 ~ 10:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol01">The value flywheel effect : 指導解決方案域的決策指南</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/ol01">
+                    The value flywheel effect : 指導解決方案域的決策指南
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Kim">Kim</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Kim">Kim</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -364,14 +427,17 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">10:30 ~ 11:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol02">在自己的新創導入 DDD 來迭代開發一個有夠複雜的線上遊戲教育創新產品</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/ol02">
+                    在自己的新創導入 DDD 來迭代開發一個有夠複雜的線上遊戲教育創新產品
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/水球潘">水球潘</a></strong>
-                  講者：<strong class="text-xl"></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/水球潘">水球潘</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -382,15 +448,18 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">11:30 ~ 12:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol03">真的懂 SOLID 原則嗎？ You Don't Know SOLID</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/ol03">
+                    真的懂 SOLID 原則嗎？ You Don't Know SOLID
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Fong">Fong</a></strong>
-                  講者：<strong class="text-xl">Fong</strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Fong">Fong</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -401,13 +470,17 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">13:15 ~ 14:00</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol04">單兵作戰：以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link :to="{ name: 'agendaDetails', params: { agendaId: 'ol04' } }">
+                    單兵作戰：以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Ean">Ean</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Ean">Ean</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -418,14 +491,18 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">14:15 ~ 15:00</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol05">DDD 中的橋樑：透過有效建模與設計，從戰略走向戰術</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/ol05">
+                    DDD 中的橋樑：透過有效建模與設計，從戰略走向戰術
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/James">James</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/James">James</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -437,13 +514,17 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">15:15 ~ 16:15</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol06">DDD 戰術 - 柔型要術</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+                  <router-link to="/agenda/ol06">
+                    DDD 戰術 - 柔型要術
+                  </router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Arthur">Arthur</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Arthur">Arthur</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -455,13 +536,17 @@
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">16:30 ~ 17:30</th>
             <td class="bg-cyan-300/10">
-                <h2 class="mb-3 text-xl font-semibold"><a href="/agenda/ol07">Domain Storytelling— One-size-fits-all 串連產品服務的需求、設計、開發與測試難度</a></h2>
+                <h2 class="mb-3 text-xl font-semibold">
+<router-link to="/agenda/ol07">
+  Domain Storytelling— One-size-fits-all 串連產品服務的需求、設計、開發與測試難度
+</router-link>
+                </h2>
                 <h3>
-                  講者：<strong class="text-xl"><a href="/speakers/Michael">Michael</a></strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Michael">Michael</router-link></strong>
                 </h3>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
-                  <img src="../assets/level.svg" alt="level">
+                  <img src="/images/level.svg" alt="level">
                 </p>
             </td>
           </tr>
@@ -473,13 +558,15 @@
 
 <script>
 import agendaData from '../data/agendaData';
+import speakersData from '../data/speakersData';
 
 export default {
   data() {
     return {
       agendaData: agendaData,
+      speakersData: speakersData,
     };
-  },
+  }
 };
 </script>
 

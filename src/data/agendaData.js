@@ -1,7 +1,7 @@
 // speakersData.js
 const agendaData = [
   {
-    title: '20201',
+    id: 'room20201',
     name: '蒼時弦也',
     level: '入門',
     topic: '導入 Domain-Driven Design 的最佳時機',
@@ -11,7 +11,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: 'ol06',
+    id: 'ol06',
     name: 'Arthur',
     level: '入門',
     topic: 'DDD戰術-柔型要術',
@@ -22,7 +22,7 @@ const agendaData = [
     website: 'https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215'
   },
   {
-    title: '30204',
+    id: 'room30204',
     name: 'Chris Simon',
     level: '進階',
     topic: 'When Customers Don\'t Share a Language',
@@ -34,7 +34,7 @@ const agendaData = [
     content5: 'We\'ll explore how the context map evolved from being aligned with user channels to being aligned with insurer subdomains and how we balanced the tradeoffs between specificity and genericness in the tactical pattern implementation within core domain contexts.'
   },
   {
-    title: '20205',
+    id: 'room20205',
     name: 'David Ko',
     level: '入門',
     topic: '如何利用 Example Mapping 來釐清需求',
@@ -47,7 +47,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30205',
+    id: 'room30205',
     name: '王威',
     level: '進階',
     topic: '用 Constructor theory實現架構演進和治理',
@@ -56,7 +56,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: 'ol04',
+    id: 'ol04',
     name: 'Ean',
     level: '入門',
     topic: '單兵作戰: 以領域驅動設計 (DDD) 改善既有進銷存管理系統的策略與實踐',
@@ -66,7 +66,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: 'ol03',
+    id: 'ol03',
     name: 'Fong',
     level: '進階',
     topic: '你真的懂 SOLID 原則嗎？',
@@ -80,7 +80,7 @@ const agendaData = [
     website2: 'https://www.youtube.com/watch?v=RtqKN9xEK0c'
   },
   {
-    title: 'ol05',
+    id: 'ol05',
     name: 'James',
     level: '進階',
     topic: 'DDD中的橋樑：透過有效建模與設計，從戰略走向戰術',
@@ -89,7 +89,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30203',
+    id: 'room30203',
     name: '程章尧',
     level: '進階',
     topic: 'DDD Applied - Introducing TDD while breaking down legacy monolith',
@@ -98,7 +98,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30302',
+    id: 'room30302',
     name: '黃健旻',
     level: '入門',
     topic: '在 Spring Boot 3 + Java 17 中實戰 Domain Driven Desgin + Clean Architecture',
@@ -109,7 +109,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30305',
+    id: 'room30305',
     name: '倪國凱',
     level: '入門',
     topic: '這些年我們所追的微服務',
@@ -121,7 +121,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: 'ol01',
+    id: 'ol01',
     name: 'Kim',
     level: '進階',
     topic: 'Value Flywheel Effect : 那些藏在價值飛輪下你該知道的策略',
@@ -131,7 +131,7 @@ const agendaData = [
     website: 'https://www.amazon.com/dp/B09V1RLRGG'
   },
   {
-    title: '20207',
+    id: 'room20207',
     name: 'Kuma Syu',
     level: '入門',
     topic: '「Code with Me」--- 我們寫了一支 API',
@@ -140,7 +140,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '20204',
+    id: 'room20204',
     name: 'Lex Liu',
     level: '入門',
     topic: '動動手手練練 Event Sourcing',
@@ -154,7 +154,7 @@ const agendaData = [
     website4: 'https://www.youtube.com/playlist?list=PLThyvG1mlMzkRKJnhzvxtSAbY8oxENLUQ'
   },
   {
-    title: 'ol07',
+    id: 'ol07',
     name: 'Michael',
     level: '入門',
     topic: 'Domain Storytelling— One-size-fits-all 串連產品服務的需求、設計、開發與測試',
@@ -168,7 +168,7 @@ const agendaData = [
     website2: 'https://www.amazon.com/Domain-Storytelling-Collaborative-Domain-Driven-Addison-Wesley/dp/0137458916'
   },
   {
-    title: '30306',
+    id: 'room30306',
     name: 'Miles',
     level: '入門',
     topic: '在風雨交加的航道上探索 DDD：從困惑到啟發',
@@ -181,7 +181,7 @@ const agendaData = [
     website: 'https://www.tenlong.com.tw/products/9787121224485'
   },
   {
-    title: '30304',
+    id: 'room30304',
     name: '雷N',
     level: '入門',
     topic: '探索系統的可觀測性',
@@ -195,7 +195,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30201',
+    id: 'room30201',
     name: 'Nina',
     level: '入門',
     topic: 'Event Storming實戰經驗分享',
@@ -209,7 +209,7 @@ const agendaData = [
     book2: '“Domain-Driven Design: Tackling Complexity in the Heart of Software” by Eric Evans'
   },
   {
-    title: '20202',
+    id: 'room20202',
     name: 'Soking',
     level: '入門',
     topic: '偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊',
@@ -225,7 +225,7 @@ const agendaData = [
     book: '內容即未來：數字產品規劃與建模'
   },
   {
-    title: '30307',
+    id: 'room30307',
     name: '劉宥辰',
     level: '入門',
     topic: '從混亂到組織：DDD與Clean Architecture的持續精進挑戰之道',
@@ -234,7 +234,7 @@ const agendaData = [
     website: 'https://www.tenlong.com.tw/products/9786263331815'
   },
   {
-    title: '30303',
+    id: 'room30303',
     name: 'Stephen Tung',
     level: '進階',
     topic: 'The Superpowers of Event Sourcing',
@@ -245,7 +245,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30206',
+    id: 'room30206',
     name: '高松',
     level: '入門',
     topic: '複雜遺留系統的現代化改造方法與實踐',
@@ -258,7 +258,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '',
+    id: 'room30207',
     name: '陳建村',
     level: '進階',
     topic: '用模式語言解壓縮CQRS：以ezKanban系統為例',
@@ -267,7 +267,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30301',
+    id: 'room30301',
     name: 'Vlad Khononov',
     level: '入門',
     topic: '軟件設計中的平衡耦合',
@@ -279,7 +279,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: 'ol02',
+    id: 'ol02',
     name: '水球潘',
     level: '入門',
     topic: '在自己的新創導入 DDD 來迭代開發一個有夠複雜的線上遊戲教育創新產品',
@@ -301,7 +301,7 @@ const agendaData = [
     website: ''
   },
   {
-    title: '30202',
+    id: 'room30202',
     name: '魏宣德',
     name2: '邱凡遠',
     level: '入門',

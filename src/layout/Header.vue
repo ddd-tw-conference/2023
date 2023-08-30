@@ -10,7 +10,7 @@
         class="md:flex justify-between pl-5 md:pl-0"
       >
         <div class="flex justify-between">
-          <router-link to="/" class="text-xl font-bold">
+          <router-link to="" class="text-xl font-bold">
             <h1 class="flex pt-2 pb-3">
               <img src="../../public/favicon.svg" alt="Logo of DDDesign TW 2023" />
               <span class="ml-2">DDDesign TW</span>
