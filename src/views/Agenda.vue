@@ -19,8 +19,8 @@
           <tr>
             <th class="pin text-3xl font-semibold bg-sky-950 ">Room</th>
             <th class="text-3xl font-semibold text-amber-300 bg-cyan-300/10 min-w-[50%]">303</th>
-            <th class="text-3xl font-semibold text-lime-300 bg-lime-300/10 min-w-[50%]">302</th>
-            <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[50%]">202</th>
+            <th class="text-3xl font-semibold text-lime-300 bg-lime-300/10 min-w-[50%]">202</th>
+            <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[50%]">302</th>
           </tr>
         </thead>
         <tbody>
