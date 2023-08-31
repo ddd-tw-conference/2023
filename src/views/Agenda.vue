@@ -50,7 +50,7 @@
             <td class="bg-lime-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room30201">
-                    Balancing Coupling in Software Design
+                    EventStorming 實戰經驗分享
                   </router-link>
                 </h2>
                 <h3>
@@ -65,7 +65,7 @@
             <td class="bg-cyan-500/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room20201">
-                    EventStorming 實戰經驗分享
+                    導入 Domain-Driven Design 的最佳時機
                   </router-link>
                 </h2>
                 <h3>
