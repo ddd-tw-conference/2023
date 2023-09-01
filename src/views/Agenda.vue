@@ -50,11 +50,14 @@
             <td class="bg-lime-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room30201">
-                    EventStorming 實戰經驗分享
+                    導入 Domain-Driven Design 的最佳時機
                   </router-link>
                 </h2>
                 <h3>
-                  講者：<strong class="text-xl"><router-link to="/speakers/Nina">Nina</router-link></strong>
+                  講者：
+                  <strong class="text-xl">
+                    <router-link to="/speakers/蒼時弦也">蒼時弦也</router-link>
+                  </strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
@@ -65,14 +68,11 @@
             <td class="bg-cyan-500/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room20201">
-                    導入 Domain-Driven Design 的最佳時機
+                    EventStorming 實戰經驗分享
                   </router-link>
                 </h2>
                 <h3>
-                  講者：
-                  <strong class="text-xl">
-                    <router-link to="/speakers/蒼時弦也">蒼時弦也</router-link>
-                  </strong>
+                  講者：<strong class="text-xl"><router-link to="/speakers/Nina">Nina</router-link></strong>
                 </h3>
                 <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
