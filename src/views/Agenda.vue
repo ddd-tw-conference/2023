@@ -121,7 +121,7 @@
                   <img src="/images/level.svg" alt="level">
                 </p>
             </td>
-            <td class="bg-cyan-500/10">
+            <td class="bg-cyan-500/10" style="border-bottom: 0">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room20202">
                     偷偷將 Event Storming 簡化運用於需求探索的資訊架構設計工作坊
@@ -141,7 +141,7 @@
             <th class="pin text-xl font-semibold bg-sky-950">11:15 ~ 11:30<br />休息</th>
             <td class="bg-sky-950/20"></td>
             <td class="bg-sky-950/20"></td>
-            <td class="bg-sky-950/20"></td>
+            <td class="bg-cyan-500/10 text-yellow-300" style="border-bottom: 0; border-top:0; vertical-align: middle;">* 不休息，讓我們繼續戰下去！</td>
           </tr>
           <tr>
             <th class="pin text-xl font-semibold bg-sky-950">11:30 ~ 12:15</th>
@@ -177,7 +177,7 @@
                   <img src="/images/level.svg" alt="level">
                 </p>
             </td>
-            <td class="bg-cyan-500/10">
+            <td class="bg-cyan-500/10" style="border-top:0;">
             </td>
           </tr>
           <tr>
@@ -261,7 +261,7 @@
             <td class="bg-lime-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room30205">
-                    用 Constructor theory 实现架构演进和治理
+                    用 Constructor theory 实现架构演进和治理（線上）
                   </router-link>
                 </h2>
                 <h3>
