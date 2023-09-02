@@ -242,7 +242,7 @@
             <td class="bg-sky-950/20"></td>
           </tr>
           <tr>
-            <th class="pin text-xl font-semibold bg-sky-950">13:15 ~ 14:00</th>
+            <th class="pin text-xl font-semibold bg-sky-950">14:15 ~ 15:00</th>
             <td class="bg-cyan-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room30305">
