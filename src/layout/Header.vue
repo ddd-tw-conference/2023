@@ -55,8 +55,13 @@
             </router-link>
           </li>
           <li class="pt-3 pb-3 mr-5">
-            <router-link to="/agenda" class="font-me text-white text-slate-700 hover:text-blue-300">
-              議程
+            <router-link to="/agendaDayOne" class="font-me text-white text-slate-700 hover:text-blue-300">
+              實體講座 0916
+            </router-link>
+          </li>
+          <li class="pt-3 pb-3 mr-5">
+            <router-link to="/agendaDayTwo" class="font-me text-white text-slate-700 hover:text-blue-300">
+              線上講座 0917
             </router-link>
           </li>
           <li class="pt-3 pb-3 mr-5">

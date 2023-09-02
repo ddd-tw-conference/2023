@@ -4,7 +4,8 @@ import About from '../views/About.vue';
 import Volunteer from '../views/Volunteer.vue';
 import Speakers from '../views/Speakers.vue';
 import SpeakerDetails from '../views/SpeakerDetails.vue';
-import Agenda from '../views/Agenda.vue';
+import AgendaDayOne from '../views/AgendaDayOne.vue';
+import AgendaDayTwo from '../views/AgendaDayTwo.vue';
 import AgendaDetails from '../views/AgendaDetails.vue';
 
 const routes = [
@@ -17,7 +18,8 @@ const routes = [
     component: SpeakerDetails,
     name: 'speakerDetail'
   },
-  { path: '/agenda', component: Agenda },
+  { path: '/agendaDayOne', component: AgendaDayOne },
+  { path: '/agendaDayTwo', component: AgendaDayTwo },
   { 
     path: '/agenda/:agendaId',
     component: AgendaDetails,
