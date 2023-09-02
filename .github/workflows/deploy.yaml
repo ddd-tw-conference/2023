@@ -26,6 +26,9 @@ jobs:
       - name: 404.html for SPA
         run: cp ./dist/index.html ./dist/404.html
 
+      - name: Simple SEO
+        run: npm run post
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
