@@ -75,7 +75,7 @@ function formatDescription(description: string): string {
       const relatedPath = path.join("speakers", `${speaker.name}.html`);
       const targetPath = path.join(distDir, relatedPath);
       await fs.writeFile(targetPath, $.html(), "utf8");
-      siteMapFiles.push(relatedPath);
+      siteMapFiles.push(urlJoin("speakers", encodeURIComponent(speaker.name)));
     })
   );
   await fs.mkdirp(path.join(distDir, "agenda"));
