@@ -27,6 +27,12 @@ const otherPages = [
       "DDD Taiwan 將於 2023 / 09 /16~17 日舉辦第三屆年會。隨著年會即將舉辦，我們仍舊需要更多的志工夥伴的加入，一起參與年會籌備，一起將年會舉辦的更完美！來參與志工的你可以學習規劃與舉辦研討會的方式、接觸更多軟體開發的知識、拓展人脈、建立連結、獲得和團隊一起共同完成目標的成就感。不用再猶豫了！一起加入我們吧！",
   },
   {
+    path: "speakers",
+    title: "講師介紹",
+    description:
+      "蒼時弦也, Arthur, Chris Simon, David Ko, 王威, Ean, Fong, James, 程章尧, 黃健旻, 倪國凱, Kim, Kuma Syu, Lex Liu, 魏宣德, Michael, Miles, 雷N, Nina, Soking, 劉宥辰, Stephen Tung, 高松, 陳建村, Vlad Khononov, 水球潘, 邱凡遠",
+  },
+  {
     path: "agendaDayOne",
     title: "實體講座",
     description: "2023/09/16 講座分為：Keynotes、講座及工作坊共三類型。",
@@ -49,14 +55,21 @@ function formatDescription(description: string): string {
 (async function main() {
   const siteMapFiles: string[] = ["index.html"];
   const indexHtml = await fs.readFile(path.join(distDir, "index.html"), "utf8");
+  const $ = load(indexHtml);
+  const siteTitle = $("head title").text();
   await Promise.all(
     otherPages.map(async (page) => {
       const $ = load(indexHtml);
-      $("head title").text(page.title);
+      const title = page.title || siteTitle;
+      const fullTitle =
+        !title || title === siteTitle ? title : `${title} - ${siteTitle}`;
+      const appEl = $("#app");
+      $("head title").text(fullTitle);
       $("head meta[name=description]").attr(
         "content",
         formatDescription(page.description)
       );
+      appEl.append(`<h1>${title}</h1>`);
       const relatedPath = `${page.path}.html`;
       const targetPath = path.join(distDir, relatedPath);
       await fs.writeFile(targetPath, $.html(), "utf8");
@@ -67,11 +80,16 @@ function formatDescription(description: string): string {
   await Promise.all(
     speakers.map(async (speaker) => {
       const $ = load(indexHtml);
-      $("head title").text(speaker.name);
+      const title = speaker.name || siteTitle;
+      const fullTitle =
+        !title || title === siteTitle ? title : `${title} - ${siteTitle}`;
+      const appEl = $("#app");
+      $("head title").text(fullTitle);
       $("head meta[name=description]").attr(
         "content",
         formatDescription(speaker.bio)
       );
+      appEl.append(`<h1>${title}</h1>`);
       const relatedPath = path.join("speakers", `${speaker.name}.html`);
       const targetPath = path.join(distDir, relatedPath);
       await fs.writeFile(targetPath, $.html(), "utf8");
@@ -82,11 +100,16 @@ function formatDescription(description: string): string {
   await Promise.all(
     agendas.map(async (agenda) => {
       const $ = load(indexHtml);
-      $("head title").text(agenda.topic);
+      const title = agenda.topic || siteTitle;
+      const fullTitle =
+        !title || title === siteTitle ? title : `${title} - ${siteTitle}`;
+      const appEl = $("#app");
+      $("head title").text(fullTitle);
       $("head meta[name=description]").attr(
         "content",
         formatDescription(agenda.intro || agenda.content)
       );
+      appEl.append(`<h1>${title}</h1>`);
       const relatedPath = path.join("agenda", `${agenda.id}.html`);
       const targetPath = path.join(distDir, relatedPath);
       await fs.writeFile(targetPath, $.html(), "utf8");
