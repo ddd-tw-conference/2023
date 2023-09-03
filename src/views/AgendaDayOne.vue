@@ -222,13 +222,13 @@
             <td class="bg-cyan-500/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/room20204">
-                    動動手手練練 Event Sourcing 難度
+                    動動手手練練 Event Sourcing
                   </router-link>
                 </h2>
                 <h3>
                   講者：<strong class="text-xl"><router-link to="/speakers/Lex Liu">Lex Liu</router-link></strong>
                 </h3>
-                <p class="mt-3">類型：工作坊</p>
+                <p class="mt-3">類型：講座</p>
                 <p class="flex items-center">
                   <span class="mr-2">難度:</span>
                   <img src="/images/level.svg" alt="level">
