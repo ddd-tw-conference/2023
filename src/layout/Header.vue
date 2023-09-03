@@ -11,10 +11,10 @@
       >
         <div class="flex justify-between">
           <router-link to="/" class="text-xl font-bold">
-            <h1 class="flex pt-2 pb-3">
+            <span class="flex pt-2 pb-3">
               <img src="/favicon.svg" alt="Logo of DDDesign TW 2023" />
               <span class="ml-2">DDDesign TW</span>
-            </h1>
+            </span>
           </router-link>
           <div @click="toggleNav" class="mt-2 md:hidden">
             <button type="button" class="text-white focus:outline-none pr-5 md:pr-0">
