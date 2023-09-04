@@ -102,10 +102,10 @@ const agendaData = [
     name: '黃健旻',
     level: '入門',
     topic: '在 Spring Boot 3 + Java 17 中實戰 Domain Driven Design + Clean Architecture',
-    intro: 'Spring Boot 3 + Java 17 為 JVM 生態系帶來一系列的更新，其中也包含性能部分的升級，Spring Native on GraalVM。不過，使用此技術棧會有一些語言與支援函式庫的取捨。在這個議程中，我們會展示用 Domain Driven Desgin + Clean Architecture 開發的專案如何巧妙地解決這個問題。',
+    intro: 'Spring Boot 3 + Java 17 為 JVM 生態系帶來一系列的更新，其中也包含性能部分的升級，Spring Native on GraalVM。不過，使用此技術棧會有一些語言與支援函式庫的取捨。在這個議程中，我們會展示用 Domain Driven Design + Clean Architecture 開發的專案如何巧妙地解決這個問題。',
     content: '解釋 Spring Boot 3 + Java 17 的優點與挑戰',
-    content2: '快速同步大家對於 Domain Driven Desgin + Clean Architecture 的認知',
-    content3: '展示使用 Domain Driven Desgin + Clean Architecture 開發的專案和如何解決遇到的挑戰',
+    content2: '快速同步大家對於 Domain Driven Design + Clean Architecture 的認知',
+    content3: '展示使用 Domain Driven Design + Clean Architecture 開發的專案和如何解決遇到的挑戰',
     website: ''
   },
   {
