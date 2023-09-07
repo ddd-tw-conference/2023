@@ -16,7 +16,7 @@
     <hr class="mt-6 mb-6" />
     
     <div class="p-3">
-      <img src="/images/floor-plan-third-floor.svg" alt="二樓場地圖" class="mx-auto">
+      <img src="/images/floor-plan-second-floor.svg" alt="二樓場地圖" class="mx-auto">
     </div>
 
   </section>
