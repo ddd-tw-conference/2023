@@ -7,6 +7,9 @@ import SpeakerDetails from '../views/SpeakerDetails.vue';
 import AgendaDayOne from '../views/AgendaDayOne.vue';
 import AgendaDayTwo from '../views/AgendaDayTwo.vue';
 import AgendaDetails from '../views/AgendaDetails.vue';
+import FloorPlan from '../views/FloorPlan.vue';
+import Map from '../views/Map.vue';
+import WorkshopRule from '../views/WorkshopRule.vue';
 
 const routes = [
   { path: '', name: 'home', component: Home },
@@ -24,6 +27,15 @@ const routes = [
     path: '/agenda/:agendaId',
     component: AgendaDetails,
     name: 'agendaDetails'
+  },
+  {
+    path: '/floorPlan', component: FloorPlan
+  },
+  {
+    path: '/map', component: Map
+  },
+  {
+    path: '/workshopRule', component: WorkshopRule
   },
 
 ];

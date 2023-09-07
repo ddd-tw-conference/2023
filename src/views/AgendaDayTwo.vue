@@ -49,7 +49,7 @@
             <td class="bg-cyan-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
                   <router-link to="/agenda/ol02">
-                    在自己的新創導入 DDD 來迭代開發一個有夠複雜的線上遊戲教育創新產品
+                    新創到底適不適合走 DDD ？ 就讓我公司當白老鼠走一次 Scrum x DDD 試試看吧
                   </router-link>
                 </h2>
                 <h3>

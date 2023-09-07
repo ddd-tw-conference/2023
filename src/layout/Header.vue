@@ -65,6 +65,21 @@
             </router-link>
           </li>
           <li class="pt-3 pb-3 mr-5">
+            <router-link to="/floorPlan" class="font-me text-white text-slate-700 hover:text-blue-300">
+              場地動線
+            </router-link>
+          </li>
+          <li class="pt-3 pb-3 mr-5">
+            <router-link to="/map" class="font-me text-white text-slate-700 hover:text-blue-300">
+              交通地圖
+            </router-link>
+          </li>
+          <li class="pt-3 pb-3 mr-5">
+            <router-link to="/workshopRule" class="font-me text-white text-slate-700 hover:text-blue-300">
+              報名工作坊
+            </router-link>
+          </li>
+          <li class="pt-3 pb-3 mr-5">
             <a class="font-me pr-3 pl-3 pt-1 pb-1 text-slate-700 text-white rounded bg-sky-500 hover:bg-sky-600"
               href="https://dddtaiwan.kktix.cc/events/dddtwconf2023" target="_blank"
             >

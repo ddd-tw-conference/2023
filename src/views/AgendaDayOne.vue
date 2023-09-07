@@ -31,6 +31,12 @@
             <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="border-bottom: 0; border-top:0; vertical-align: middle;">小型教室</td>
           </tr>
           <tr>
+            <th class="pin text-xl font-semibold bg-sky-950">9:25 ~ 9:30</th>
+            <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">開場</td>
+            <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">開場</td>
+            <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">開場</td>
+          </tr>
+          <tr>
             <th class="pin text-xl font-semibold bg-sky-950">09:30 ~ 10:15</th>
             <td class="bg-cyan-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
@@ -46,6 +52,7 @@
                   <span class="mr-2">難度:</span>
                   <img src="/images/level.svg" alt="level">
                 </p>
+                <p><span class="bg-yellow-300 text-black p-1">* 全英文演說</span></p>
             </td>
             <td class="bg-lime-300/10">
                 <h2 class="mb-3 text-xl font-semibold">
@@ -218,6 +225,7 @@
                   <img src="/images/level.svg" alt="level">
                   <img src="/images/level.svg" alt="level">
                 </p>
+                <p><span class="bg-yellow-300 text-black p-1">* 全英文演說</span></p>
             </td>
             <td class="bg-cyan-500/10">
                 <h2 class="mb-3 text-xl font-semibold">
