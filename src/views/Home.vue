@@ -84,7 +84,7 @@
         <img src="/images/silver-sponsors.svg" alt="ICON of silver sponsors" />
       </h2>
       <p class="flex justify-center">
-        <a href="https://www.bitoex.com/" target="_blank" class="m-2">
+        <a href="https://www.bitopro.com/" target="_blank" class="m-2">
           <img src="/images/logo-BitoGroup.png" alt="LOGO of 幣託集團" />
         </a>
         <a href="https://www.eventstore.com/" target="_blank" class="m-2">
